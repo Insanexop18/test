@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Portals — SparkForge</title>
+    <meta name="description" content="SparkForge builds internal tools, client portals, dashboards, and B2B platforms. If your business runs on the web, we build the thing it runs on.">
+    <link rel="stylesheet" href="portal-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="../Asset/SF logo 3.png" type="image/png">
+</head>
+<body>
+
+<!-- ══ NAVBAR ══════════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+            <div class="logo-mark">SF</div>
+            <span class="logo-name">SparkForge</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="../index.html#services">Services</a></li>
+            <li><a href="../index.html#work">Our Work</a></li>
+            <li><a href="../index.html#team">Team</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="../index.html#contact" class="nav-cta">Start a Project</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#work">Our Work</a>
+        <a href="../index.html#team">Team</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="../index.html#contact" class="mobile-cta">Start a Project →</a>
+    </div>
+</nav>
+
+<!-- ══ SERVICE HERO ═══════════════════════════════════════════════════════ -->
+<section class="svc-hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+
+    <div class="container">
+        <div class="svc-hero__inner">
+            <div class="svc-hero__content" data-reveal>
+                <a href="../index.html#services" class="breadcrumb">
+                    <i class="fas fa-arrow-left"></i> All Services
+                </a>
+                <div class="svc-hero__badge">
+                    <i class="fas fa-building"></i>
+                    Service 03
+                </div>
+                <h1 class="svc-hero__title">
+                    Business<br>
+                    <em>Portals</em><br>
+                    <span class="accent">built to scale.</span>
+                </h1>
+                <p class="svc-hero__desc">
+                    Internal tools, client portals, dashboards, and B2B platforms. If your business runs on the web, we build the thing it runs on — fast, secure, and made for real users.
+                </p>
+                <div class="svc-hero__actions">
+                    <a href="../index.html#contact" class="btn btn--primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    <a href="#features" class="btn btn--ghost">See Features ↓</a>
+                </div>
+                <div class="svc-hero__meta">
+                    <div class="meta-item">
+                        <strong>₹60k–₹3L+</strong>
+                        <span>Starting Range</span>
+                    </div>
+                    <div class="meta-sep"></div>
+                    <div class="meta-item">
+                        <strong>4–12 Weeks</strong>
+                        <span>Delivery Time</span>
+                    </div>
+                    <div class="meta-sep"></div>
+                    <div class="meta-item">
+                        <strong>Role-Based</strong>
+                        <span>Access Control</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="svc-hero__visual" data-reveal>
+                <div class="dashboard-mockup">
+                    <div class="dash-sidebar">
+                        <div class="dash-logo"></div>
+                        <div class="dash-nav">
+                            <div class="dash-nav-item dash-nav-item--active">
+                                <i class="fas fa-th-large"></i>
+                            </div>
+                            <div class="dash-nav-item">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="dash-nav-item">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="dash-nav-item">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dash-main">
+                        <div class="dash-topbar">
+                            <div class="dash-title"></div>
+                            <div class="dash-avatar"></div>
+                        </div>
+                        <div class="dash-stats-row">
+                            <div class="dash-stat-card">
+                                <div class="dash-stat-label"></div>
+                                <div class="dash-stat-num"></div>
+                                <div class="dash-stat-change dash-stat-change--up">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                            </div>
+                            <div class="dash-stat-card">
+                                <div class="dash-stat-label"></div>
+                                <div class="dash-stat-num dash-stat-num--mid"></div>
+                                <div class="dash-stat-change dash-stat-change--up">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                            </div>
+                            <div class="dash-stat-card">
+                                <div class="dash-stat-label"></div>
+                                <div class="dash-stat-num dash-stat-num--sm"></div>
+                                <div class="dash-stat-change dash-stat-change--down">
+                                    <i class="fas fa-arrow-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dash-chart-area">
+                            <div class="dash-chart-bars">
+                                <div class="dash-bar" style="height:55%"></div>
+                                <div class="dash-bar" style="height:70%"></div>
+                                <div class="dash-bar" style="height:45%"></div>
+                                <div class="dash-bar" style="height:85%"></div>
+                                <div class="dash-bar dash-bar--active" style="height:100%"></div>
+                                <div class="dash-bar" style="height:65%"></div>
+                                <div class="dash-bar" style="height:78%"></div>
+                            </div>
+                        </div>
+                        <div class="dash-table">
+                            <div class="dash-table-row dash-table-row--head">
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="dash-table-row">
+                                <div></div><div></div><div></div>
+                                <div class="dash-badge dash-badge--green"></div>
+                            </div>
+                            <div class="dash-table-row">
+                                <div></div><div></div><div></div>
+                                <div class="dash-badge dash-badge--yellow"></div>
+                            </div>
+                            <div class="dash-table-row">
+                                <div></div><div></div><div></div>
+                                <div class="dash-badge dash-badge--green"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mock-floating mock-floating--1"><i class="fas fa-lock"></i></div>
+                <div class="mock-floating mock-floating--2"><i class="fas fa-chart-line"></i></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ TICKER ════════════════════════════════════════════════════════════ -->
+<div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+        <span>Authentication & Roles</span><span class="ticker__dot">◆</span>
+        <span>Data Dashboards</span><span class="ticker__dot">◆</span>
+        <span>API Integrations</span><span class="ticker__dot">◆</span>
+        <span>Custom Workflows</span><span class="ticker__dot">◆</span>
+        <span>Client Portals</span><span class="ticker__dot">◆</span>
+        <span>Real-Time Data</span><span class="ticker__dot">◆</span>
+        <span>Authentication & Roles</span><span class="ticker__dot">◆</span>
+        <span>Data Dashboards</span><span class="ticker__dot">◆</span>
+        <span>API Integrations</span><span class="ticker__dot">◆</span>
+        <span>Custom Workflows</span><span class="ticker__dot">◆</span>
+        <span>Client Portals</span><span class="ticker__dot">◆</span>
+        <span>Real-Time Data</span><span class="ticker__dot">◆</span>
+    </div>
+</div>
+
+<!-- ══ WHAT IS INCLUDED ══════════════════════════════════════════════════ -->
+<section class="features" id="features">
+    <div class="container">
+        <p class="section-label">What's Included</p>
+        <h2 class="section-title">Every tool your business<br>actually needs.</h2>
+        <p class="section-sub">No generic templates. Every portal is architected around how your business actually works.</p>
+
+        <div class="features-grid">
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon">
+                    <i class="fas fa-user-lock"></i>
+                </div>
+                <h3>Authentication & Role-Based Access</h3>
+                <p>Secure login with multi-role support — admins, managers, clients, and staff each see only what they need. OAuth, JWT, and SSO supported.</p>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Data Dashboards</h3>
+                <p>Real-time charts, KPI cards, and filterable tables that give decision-makers instant visibility into the numbers that matter.</p>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon">
+                    <i class="fas fa-plug"></i>
+                </div>
+                <h3>API Integrations</h3>
+                <p>We connect your portal to the tools you already use — CRMs, ERPs, payment gateways, third-party data sources, and internal databases.</p>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <h3>Custom Workflows</h3>
+                <p>Approval flows, task queues, status pipelines, and automated notifications. We model your exact process and put it on the web.</p>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon">
+                    <i class="fas fa-file-invoice"></i>
+                </div>
+                <h3>Document & Report Generation</h3>
+                <p>Auto-generate PDFs, invoices, reports, and exports from live data. Send them by email, download on demand, or archive automatically.</p>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <h3>Notifications & Alerts</h3>
+                <p>In-app, email, and SMS notifications triggered by workflow events. Keep your team informed without manual follow-ups.</p>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Advanced Search & Filtering</h3>
+                <p>Full-text search, multi-column filters, date ranges, and saved views. Finding anything in your data should take seconds, not minutes.</p>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security & Audit Logs</h3>
+                <p>HTTPS, encrypted storage, CSRF protection, and full audit trails so you always know who did what, and when.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══ USE CASES ═════════════════════════════════════════════════════════ -->
+<section class="use-cases">
+    <div class="container">
+        <p class="section-label">Use Cases</p>
+        <h2 class="section-title">One service.<br>Endless applications.</h2>
+        <p class="section-sub">Business portals aren't a single product — here's what we've built and what we can build for you.</p>
+
+        <div class="use-cases-grid">
+
+            <div class="use-case-card" data-reveal>
+                <div class="use-case-card__icon"><i class="fas fa-handshake"></i></div>
+                <h3>Client Portals</h3>
+                <p>Give your clients a dedicated space to view project progress, approve deliverables, download reports, and raise tickets — all without a single back-and-forth email.</p>
+                <div class="use-case-card__tags">
+                    <span>Agencies</span><span>Consultancies</span><span>Freelancers</span>
+                </div>
+            </div>
+
+            <div class="use-case-card" data-reveal>
+                <div class="use-case-card__icon"><i class="fas fa-boxes"></i></div>
+                <h3>Inventory & Operations</h3>
+                <p>Track stock levels, manage suppliers, log inbound and outbound movements, and get alerts before things run out. Built for warehouses, retailers, and distributors.</p>
+                <div class="use-case-card__tags">
+                    <span>Retail</span><span>Logistics</span><span>Manufacturing</span>
+                </div>
+            </div>
+
+            <div class="use-case-card" data-reveal>
+                <div class="use-case-card__icon"><i class="fas fa-users-cog"></i></div>
+                <h3>HR & Employee Portals</h3>
+                <p>Leave requests, attendance tracking, payroll visibility, onboarding flows, and employee directories — accessible from any device, any time.</p>
+                <div class="use-case-card__tags">
+                    <span>SMBs</span><span>Enterprises</span><span>Startups</span>
+                </div>
+            </div>
+
+            <div class="use-case-card" data-reveal>
+                <div class="use-case-card__icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Learning Management Systems</h3>
+                <p>Course creation, video hosting, quizzes, progress tracking, and certificates. A full LMS tailored to your curriculum and branding.</p>
+                <div class="use-case-card__tags">
+                    <span>EdTech</span><span>Corporate Training</span><span>Institutes</span>
+                </div>
+            </div>
+
+            <div class="use-case-card" data-reveal>
+                <div class="use-case-card__icon"><i class="fas fa-chart-pie"></i></div>
+                <h3>Analytics & BI Dashboards</h3>
+                <p>Consolidate data from multiple sources into one view. Charts, trends, forecasts, and drill-downs that let your leadership team make better decisions faster.</p>
+                <div class="use-case-card__tags">
+                    <span>Finance</span><span>Marketing</span><span>Operations</span>
+                </div>
+            </div>
+
+            <div class="use-case-card" data-reveal>
+                <div class="use-case-card__icon"><i class="fas fa-store"></i></div>
+                <h3>Vendor & Partner Portals</h3>
+                <p>Onboard vendors, manage contracts, track deliverables, and handle invoicing — all in one shared portal your supply chain can actually use.</p>
+                <div class="use-case-card__tags">
+                    <span>B2B</span><span>Supply Chain</span><span>Procurement</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══ WHO IS IT FOR ═════════════════════════════════════════════════════ -->
+<section class="who-for">
+    <div class="container">
+        <div class="who-for__inner">
+            <div class="who-for__text" data-reveal>
+                <p class="section-label">Who It's For</p>
+                <h2 class="section-title">If your team juggles<br>spreadsheets —<br><em>this is for you.</em></h2>
+                <p class="section-sub">If you're running critical business operations through email threads and Excel files, a portal isn't a luxury. It's overdue.</p>
+
+                <div class="who-list">
+                    <div class="who-item">
+                        <div class="who-item__icon"><i class="fas fa-building"></i></div>
+                        <div>
+                            <strong>SMBs & Growing Teams</strong>
+                            <p>Outgrowing spreadsheets and need a central system that keeps everyone on the same page as the team scales.</p>
+                        </div>
+                    </div>
+                    <div class="who-item">
+                        <div class="who-item__icon"><i class="fas fa-briefcase"></i></div>
+                        <div>
+                            <strong>Service-Based Businesses</strong>
+                            <p>Agencies, consultancies, and professional services firms that need to deliver a premium client experience digitally.</p>
+                        </div>
+                    </div>
+                    <div class="who-item">
+                        <div class="who-item__icon"><i class="fas fa-industry"></i></div>
+                        <div>
+                            <strong>Operations-Heavy Companies</strong>
+                            <p>Logistics, manufacturing, and retail businesses where tracking, workflows, and real-time data visibility are non-negotiable.</p>
+                        </div>
+                    </div>
+                    <div class="who-item">
+                        <div class="who-item__icon"><i class="fas fa-rocket"></i></div>
+                        <div>
+                            <strong>B2B SaaS Startups</strong>
+                            <p>Early-stage companies that need a working product portal shipped fast, without spending months on engineering.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="who-for__visual" data-reveal>
+                <div class="testimonial-stack">
+                    <div class="testimonial-card testimonial-card--top">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"We replaced 4 spreadsheets and 2 WhatsApp groups with one portal. Our ops team went from chaos to clarity overnight."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">SK</div>
+                            <div>
+                                <strong>Sanjay K.</strong>
+                                <span>COO, LogiTrack India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card testimonial-card--bottom">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"The client portal SparkForge built cut our back-and-forth emails by 80%. Clients love it. We love it more."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">NP</div>
+                            <div>
+                                <strong>Neha P.</strong>
+                                <span>Founder, Studio Nyne</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-badge floating-badge--1">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure by default</span>
+                    </div>
+                    <div class="floating-badge floating-badge--2">
+                        <i class="fas fa-bolt"></i>
+                        <span>Real-time data</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ PROCESS ════════════════════════════════════════════════════════════ -->
+<section class="process">
+    <div class="container">
+        <p class="section-label">How We Work</p>
+        <h2 class="section-title">From requirements<br>to running product.</h2>
+
+        <div class="process-grid">
+
+            <div class="process-step" data-reveal>
+                <div class="process-step__num">01</div>
+                <div class="process-step__icon"><i class="fas fa-sitemap"></i></div>
+                <h3>Requirements Mapping</h3>
+                <p>We dig deep into your workflows, user roles, data sources, and pain points. We document everything before touching Figma or a code editor.</p>
+            </div>
+
+            <div class="process-step" data-reveal>
+                <div class="process-step__num">02</div>
+                <div class="process-step__icon"><i class="fas fa-pencil-ruler"></i></div>
+                <h3>Architecture & Design</h3>
+                <p>We design the data model and system architecture alongside the UI. You get Figma screens and a technical plan before any code is written.</p>
+            </div>
+
+            <div class="process-step" data-reveal>
+                <div class="process-step__num">03</div>
+                <div class="process-step__icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Iterative Development</h3>
+                <p>We build in sprints with weekly demos. Core features ship first so you can start testing real workflows early — not after three months.</p>
+            </div>
+
+            <div class="process-step" data-reveal>
+                <div class="process-step__num">04</div>
+                <div class="process-step__icon"><i class="fas fa-rocket"></i></div>
+                <h3>Deploy & Handover</h3>
+                <p>We deploy to production, train your team, and hand over documentation. Then we stay on for 30 days of free post-launch support.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══ TECH STACK ══════════════════════════════════════════════════════════ -->
+<section class="tech-stack">
+    <div class="container">
+        <p class="section-label">Technology</p>
+        <h2 class="section-title">Serious tech for<br>serious products.</h2>
+        <p class="section-sub">We choose robust, scalable tools — built to handle real business data at real scale.</p>
+
+        <div class="tech-grid">
+            <div class="tech-item" data-reveal>
+                <div class="tech-item__icon"><i class="fab fa-react"></i></div>
+                <span>React / Next.js</span>
+            </div>
+            <div class="tech-item" data-reveal>
+                <div class="tech-item__icon"><i class="fas fa-server"></i></div>
+                <span>Node.js / Express</span>
+            </div>
+            <div class="tech-item" data-reveal>
+                <div class="tech-item__icon"><i class="fas fa-database"></i></div>
+                <span>PostgreSQL / MySQL</span>
+            </div>
+            <div class="tech-item" data-reveal>
+                <div class="tech-item__icon"><i class="fab fa-python"></i></div>
+                <span>Python / FastAPI</span>
+            </div>
+            <div class="tech-item" data-reveal>
+                <div class="tech-item__icon"><i class="fas fa-cloud"></i></div>
+                <span>AWS / GCP</span>
+            </div>
+            <div class="tech-item" data-reveal>
+                <div class="tech-item__icon"><i class="fas fa-key"></i></div>
+                <span>JWT / OAuth 2.0</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ PRICING ════════════════════════════════════════════════════════════ -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <p class="section-label">Pricing</p>
+        <h2 class="section-title">Scoped for your<br>exact needs.</h2>
+        <p class="section-sub">Business portals are bespoke products. Here's a starting framework — your actual quote will be based on scope.</p>
+
+        <div class="pricing-grid">
+
+            <div class="pricing-card" data-reveal>
+                <div class="pricing-card__header">
+                    <h3>Essential</h3>
+                    <div class="pricing-card__price">
+                        <span class="price__currency">₹</span>
+                        <span class="price__num">60,000</span>
+                    </div>
+                    <p>A focused portal for a single workflow — ideal for client portals, simple dashboards, or internal tools.</p>
+                </div>
+                <ul class="pricing-card__list">
+                    <li><i class="fas fa-check"></i> Auth + 2 user roles</li>
+                    <li><i class="fas fa-check"></i> Up to 5 core modules</li>
+                    <li><i class="fas fa-check"></i> Basic dashboard</li>
+                    <li><i class="fas fa-check"></i> Email notifications</li>
+                    <li><i class="fas fa-check"></i> Secure deployment</li>
+                    <li class="muted"><i class="fas fa-times"></i> API integrations</li>
+                    <li class="muted"><i class="fas fa-times"></i> Report generation</li>
+                </ul>
+                <a href="../index.html#contact" class="btn btn--ghost-dark">Get Started →</a>
+            </div>
+
+            <div class="pricing-card pricing-card--featured" data-reveal>
+                <div class="pricing-card__badge">Most Popular</div>
+                <div class="pricing-card__header">
+                    <h3>Professional</h3>
+                    <div class="pricing-card__price">
+                        <span class="price__currency">₹</span>
+                        <span class="price__num">1,50,000</span>
+                    </div>
+                    <p>A fully-featured portal with integrations, reporting, and advanced workflows for growing businesses.</p>
+                </div>
+                <ul class="pricing-card__list">
+                    <li><i class="fas fa-check"></i> Auth + unlimited roles</li>
+                    <li><i class="fas fa-check"></i> Up to 12 modules</li>
+                    <li><i class="fas fa-check"></i> Advanced dashboards</li>
+                    <li><i class="fas fa-check"></i> API integrations (3)</li>
+                    <li><i class="fas fa-check"></i> PDF report generation</li>
+                    <li><i class="fas fa-check"></i> Email + in-app alerts</li>
+                    <li><i class="fas fa-check"></i> Audit logs</li>
+                </ul>
+                <a href="../index.html#contact" class="btn btn--primary">Get Started <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="pricing-card" data-reveal>
+                <div class="pricing-card__header">
+                    <h3>Enterprise</h3>
+                    <div class="pricing-card__price">
+                        <span class="price__currency">₹</span>
+                        <span class="price__num">3,00,000+</span>
+                    </div>
+                    <p>Large-scale platforms with complex data models, multiple integrations, and enterprise-grade security.</p>
+                </div>
+                <ul class="pricing-card__list">
+                    <li><i class="fas fa-check"></i> SSO / SAML support</li>
+                    <li><i class="fas fa-check"></i> Unlimited modules</li>
+                    <li><i class="fas fa-check"></i> Unlimited integrations</li>
+                    <li><i class="fas fa-check"></i> Custom analytics + BI</li>
+                    <li><i class="fas fa-check"></i> Multi-tenant support</li>
+                    <li><i class="fas fa-check"></i> Dedicated infrastructure</li>
+                    <li><i class="fas fa-check"></i> SLA + priority support</li>
+                </ul>
+                <a href="../index.html#contact" class="btn btn--ghost-dark">Let's Talk →</a>
+            </div>
+
+        </div>
+
+        <p class="pricing-note">All prices are indicative. Final quotes depend on modules, integrations, and complexity. <a href="../index.html#contact">Get a free estimate.</a></p>
+    </div>
+</section>
+
+<!-- ══ FAQ ══════════════════════════════════════════════════════════════════ -->
+<section class="faq">
+    <div class="container">
+        <div class="faq__inner">
+            <div class="faq__header" data-reveal>
+                <p class="section-label">FAQ</p>
+                <h2 class="section-title">Questions?<br>We've got answers.</h2>
+            </div>
+
+            <div class="faq__list">
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-q" aria-expanded="false">
+                        How long does it take to build a business portal?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-a">
+                        <p>Essential portals take 4–6 weeks. Professional-tier projects run 8–10 weeks. Enterprise platforms with complex data models and integrations typically take 10–14 weeks. We can discuss a phased approach to get core features live faster.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-q" aria-expanded="false">
+                        Can you integrate with our existing software?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes — we integrate with virtually any software that has an API. Common integrations include Salesforce, Zoho, QuickBooks, Razorpay, Stripe, Slack, Google Workspace, and custom internal databases. If it has an API, we can connect it.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-q" aria-expanded="false">
+                        Is our data secure?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-a">
+                        <p>Absolutely. All portals are built with HTTPS, encrypted data storage, JWT authentication, CSRF protection, and rate limiting. We follow OWASP security guidelines and can provide full audit logs. Enterprise builds support SSO and SAML for compliance.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-q" aria-expanded="false">
+                        Can we add more features after launch?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes — we architect portals with extensibility in mind. After the initial build, you can commission additional modules, integrations, or UI changes. Many of our clients start with a core portal and expand it over time under a retainer arrangement.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-q" aria-expanded="false">
+                        Who hosts and maintains the portal?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-a">
+                        <p>We deploy on AWS, GCP, or Vercel depending on your needs. You own the infrastructure. We handle setup, monitoring, and configuration. Post-launch, you can self-manage or keep us on a monthly maintenance retainer — your choice.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-q" aria-expanded="false">
+                        Do you build mobile apps too?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-a">
+                        <p>All our portals are fully responsive and work on mobile browsers. If you need a native or hybrid mobile app (iOS/Android) alongside the web portal, we can scope that as part of the same project — just mention it when you get in touch.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ CTA ═══════════════════════════════════════════════════════════════ -->
+<section class="service-cta">
+    <div class="container">
+        <div class="service-cta__inner" data-reveal>
+            <div class="service-cta__orb"></div>
+            <p class="section-label">Ready to Start?</p>
+            <h2>Stop running your business<br>on <em>spreadsheets.</em></h2>
+            <p>Tell us about your workflows and we'll come back with a plan within 24 hours.</p>
+            <div class="service-cta__actions">
+                <a href="../index.html#contact" class="btn btn--primary">Start a Project <i class="fas fa-arrow-right"></i></a>
+                <a href="mailto:sparkforge2025@gmail.com" class="btn btn--ghost">sparkforge2025@gmail.com</a>
+            </div>
+            <div class="service-cta__meta">
+                <span><i class="fas fa-clock"></i> Reply within 24 hrs</span>
+                <span><i class="fas fa-phone"></i> +91 78359 24050</span>
+                <span><i class="fas fa-map-marker-alt"></i> New Delhi, India</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="../index.html" class="nav-logo">
+                    <div class="logo-mark logo-mark--inv">SF</div>
+                    <span class="logo-name logo-name--inv">SparkForge</span>
+                </a>
+                <p class="footer-brand__desc">We build the web — e-commerce stores, agency platforms, business portals, and more. Based in Delhi. Shipping globally.</p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/sparkforge2025" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5>Build</h5>
+                    <a href="/E-Commerce/ecommerce.html">E-Commerce</a>
+                    <a href="/Agency/agency.html">Agency Websites</a>
+                    <a href="#">Business Portals</a>
+                    <a href="../index.html#services">Brand &amp; Design</a>
+                    <a href="../index.html#services">AI Integration</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <a href="/About Us/about-us.html">About Us</a>
+                    <a href="/careers/careers.html">Careers</a>
+                    <a href="/Contact/contact.html">Contact</a>
+                    <a href="/Privacy Policy/privacy.html">Privacy Policy</a>
+                    <a href="/Terms and Conditions/terms.html">Terms of Service</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Reach Us</h5>
+                    <a href="mailto:sparkforge2025@gmail.com">sparkforge2025@gmail.com</a>
+                    <a href="tel:+917835924050">+91 78359 24050</a>
+                    <span>New Delhi, India</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 SparkForge. All rights reserved.</p>
+            <p>Built by SparkForge — with actual code.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ══ CHATBOT ════════════════════════════════════════════════════════════ -->
+<div class="chatbot" id="chatbot">
+    <button class="chatbot__toggle" id="chatToggle" aria-label="Open chat">
+        <i class="fas fa-comment-dots" id="chatOpenIcon"></i>
+        <i class="fas fa-times" id="chatCloseIcon"></i>
+    </button>
+
+    <div class="chatbot__box" id="chatBox">
+        <div class="chatbot__header">
+            <div class="chatbot__avatar">SF</div>
+            <div>
+                <strong>SparkForge</strong>
+                <span>We reply fast ⚡</span>
+            </div>
+        </div>
+        <div class="chatbot__messages" id="chatMessages"></div>
+        <div class="chatbot__quick" id="chatQuick">
+            <button data-msg="How much does a business portal cost?">Pricing</button>
+            <button data-msg="How long does it take to build?">Timeline</button>
+            <button data-msg="Can you integrate with our existing software?">Integrations</button>
+            <button data-msg="How do I get started?">Get started</button>
+        </div>
+        <div class="chatbot__input">
+            <input type="text" id="chatInput" placeholder="Ask anything…" autocomplete="off">
+            <button id="chatSend" aria-label="Send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="portal-script.js"></script>
+</body>
+</html>

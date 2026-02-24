@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Development — SparkForge</title>
+    <meta name="description" content="SparkForge builds high-performance e-commerce stores that convert. Custom storefronts, payment integration, inventory management and more — starting at ₹40,000.">
+    <link rel="stylesheet" href="ecommerce.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ══ NAVBAR ══════════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+            <div class="logo-mark">SF</div>
+            <span class="logo-name">SparkForge</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="../index.html#services" class="nav-link--active">Services</a></li>
+            <li><a href="../index.html#work">Our Work</a></li>
+            <li><a href="../index.html#team">Team</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="../index.html#contact" class="nav-cta">Start a Project</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#work">Our Work</a>
+        <a href="../index.html#team">Team</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="../index.html#contact" class="mobile-cta">Start a Project →</a>
+    </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════════════ -->
+<section class="ec-hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+
+    <div class="container">
+        <div class="ec-hero__inner">
+
+            <!-- Left: Text -->
+            <div class="ec-hero__text">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="../index.html#services">Services</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>E-Commerce</span>
+                </div>
+                <div class="hero-badge">
+                    <span class="hero-badge__dot"></span>
+                    Most Popular Service
+                </div>
+                <h1 class="ec-hero__title">
+                    E-Commerce<br>
+                    stores that<br>
+                    <span class="title-accent">actually sell.</span>
+                </h1>
+                <p class="ec-hero__desc">
+                    We build high-performance online stores from scratch — custom product catalogs, seamless checkout, real-time inventory, and the kind of speed that keeps customers from leaving.
+                </p>
+                <div class="ec-hero__actions">
+                    <a href="../index.html#contact" class="btn btn--primary btn--lg">
+                        Get a Free Quote <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#features" class="btn btn--ghost">See what's included ↓</a>
+                </div>
+                <div class="ec-hero__trust">
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Fixed-price projects</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>30-day post-launch support</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Mobile-first by default</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Store mockup -->
+            <div class="ec-hero__visual">
+                <div class="store-mockup">
+                    <div class="mockup-bar">
+                        <span class="dot dot--red"></span>
+                        <span class="dot dot--yellow"></span>
+                        <span class="dot dot--green"></span>
+                        <div class="mockup-url">sparkstore.in</div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-nav">
+                            <div class="mockup-logo-pill"></div>
+                            <div class="mockup-nav-links">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mockup-cart">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span class="cart-badge">3</span>
+                            </div>
+                        </div>
+                        <div class="mockup-hero-strip">
+                            <div class="mockup-hero-text">
+                                <div class="mh-line mh-line--lg"></div>
+                                <div class="mh-line mh-line--md"></div>
+                                <div class="mh-btn"></div>
+                            </div>
+                            <div class="mockup-hero-img"></div>
+                        </div>
+                        <div class="mockup-products">
+                            <div class="mockup-prod" style="--d:0s">
+                                <div class="prod-img"></div>
+                                <div class="prod-info">
+                                    <div class="prod-name"></div>
+                                    <div class="prod-price"></div>
+                                </div>
+                                <div class="prod-add">Add</div>
+                            </div>
+                            <div class="mockup-prod" style="--d:0.1s">
+                                <div class="prod-img" style="--hue:160deg"></div>
+                                <div class="prod-info">
+                                    <div class="prod-name"></div>
+                                    <div class="prod-price"></div>
+                                </div>
+                                <div class="prod-add">Add</div>
+                            </div>
+                            <div class="mockup-prod" style="--d:0.2s">
+                                <div class="prod-img" style="--hue:200deg"></div>
+                                <div class="prod-info">
+                                    <div class="prod-name"></div>
+                                    <div class="prod-price"></div>
+                                </div>
+                                <div class="prod-add">Add</div>
+                            </div>
+                        </div>
+                        <!-- Floating stat cards -->
+                        <div class="float-card float-card--revenue">
+                            <i class="fas fa-rupee-sign"></i>
+                            <div>
+                                <strong>₹2,40,000</strong>
+                                <span>Revenue this month</span>
+                            </div>
+                            <div class="trend trend--up"><i class="fas fa-arrow-up"></i> 24%</div>
+                        </div>
+                        <div class="float-card float-card--orders">
+                            <i class="fas fa-box"></i>
+                            <div>
+                                <strong>148 Orders</strong>
+                                <span>Last 7 days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══ TICKER ══════════════════════════════════════════════════════════════ -->
+<div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+        <span>Custom Product Catalogs</span><span class="ticker__dot">◆</span>
+        <span>Razorpay &amp; Stripe Integration</span><span class="ticker__dot">◆</span>
+        <span>Real-Time Inventory</span><span class="ticker__dot">◆</span>
+        <span>Mobile-First Design</span><span class="ticker__dot">◆</span>
+        <span>99+ PageSpeed Score</span><span class="ticker__dot">◆</span>
+        <span>Admin Dashboard</span><span class="ticker__dot">◆</span>
+        <span>Custom Product Catalogs</span><span class="ticker__dot">◆</span>
+        <span>Razorpay &amp; Stripe Integration</span><span class="ticker__dot">◆</span>
+        <span>Real-Time Inventory</span><span class="ticker__dot">◆</span>
+        <span>Mobile-First Design</span><span class="ticker__dot">◆</span>
+        <span>99+ PageSpeed Score</span><span class="ticker__dot">◆</span>
+        <span>Admin Dashboard</span><span class="ticker__dot">◆</span>
+    </div>
+</div>
+
+<!-- ══ METRICS STRIP ══════════════════════════════════════════════════════ -->
+<section class="metrics-strip">
+    <div class="container">
+        <div class="metrics-grid">
+            <div class="metric" data-reveal>
+                <strong class="metric__num" data-target="50">0</strong><span class="metric__plus">+</span>
+                <span class="metric__label">Stores Shipped</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric" data-reveal>
+                <strong class="metric__num" data-target="99">0</strong><span class="metric__plus">+</span>
+                <span class="metric__label">Avg. PageSpeed Score</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric" data-reveal>
+                <strong class="metric__num" data-target="3">0</strong><span class="metric__suf">–5 wks</span>
+                <span class="metric__label">Avg. Delivery Time</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric" data-reveal>
+                <strong class="metric__num" data-target="30">0</strong><span class="metric__suf">-day</span>
+                <span class="metric__label">Free Support Included</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ WHAT'S INCLUDED ════════════════════════════════════════════════════ -->
+<section class="features" id="features">
+    <div class="container">
+        <div class="features-header">
+            <p class="section-label">What's Included</p>
+            <h2 class="section-title">Everything you need<br>to sell online.</h2>
+            <p class="section-sub">Every SparkForge e-commerce store ships with a complete set of features. No add-on fees, no surprise extras.</p>
+        </div>
+
+        <div class="features-grid">
+
+            <div class="feature-card feature-card--wide" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-store"></i></div>
+                <h3>Custom Storefront Design</h3>
+                <p>Pixel-perfect, on-brand storefronts designed from scratch — not a theme. Every page is built around your products and your customers, with a shopping experience that converts.</p>
+                <ul class="feature-list">
+                    <li>Homepage with featured collections</li>
+                    <li>Product listing & detail pages</li>
+                    <li>Category / collection pages</li>
+                    <li>Search with filters &amp; sorting</li>
+                    <li>Wishlist &amp; recently viewed</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-credit-card"></i></div>
+                <h3>Payment Integration</h3>
+                <p>Accept payments from anywhere in India and internationally, with zero checkout friction.</p>
+                <div class="payment-badges">
+                    <span><i class="fas fa-bolt"></i> Razorpay</span>
+                    <span><i class="fas fa-credit-card"></i> Stripe</span>
+                    <span><i class="fas fa-mobile-alt"></i> UPI / QR</span>
+                    <span><i class="fas fa-money-bill"></i> COD</span>
+                    <span><i class="fab fa-paypal"></i> PayPal</span>
+                </div>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-boxes"></i></div>
+                <h3>Inventory Management</h3>
+                <p>Know exactly what's in stock at all times. Low-stock alerts, variant tracking, and bulk uploads all built in.</p>
+                <ul class="feature-list">
+                    <li>Multi-variant products (size, colour)</li>
+                    <li>Stock level alerts</li>
+                    <li>Bulk CSV import/export</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-tachometer-alt"></i></div>
+                <h3>Admin Dashboard</h3>
+                <p>A clean, powerful control panel so you can manage everything without touching code — orders, products, customers, coupons, and analytics in one place.</p>
+                <ul class="feature-list">
+                    <li>Order management &amp; fulfilment</li>
+                    <li>Customer CRM</li>
+                    <li>Discount &amp; coupon engine</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-truck"></i></div>
+                <h3>Shipping &amp; Logistics</h3>
+                <p>Automated shipping rate calculations, order tracking pages, and integrations with popular couriers.</p>
+                <ul class="feature-list">
+                    <li>Shiprocket / Delhivery integration</li>
+                    <li>Live tracking pages</li>
+                    <li>Zone-based shipping rates</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-mobile-alt"></i></div>
+                <h3>Mobile-First &amp; Fast</h3>
+                <p>Over 70% of Indian shoppers buy on mobile. Every store we build is designed mobile-first and loads in under 2 seconds — guaranteed.</p>
+                <ul class="feature-list">
+                    <li>Core Web Vitals optimised</li>
+                    <li>Image compression &amp; lazy loading</li>
+                    <li>PWA-ready (installable)</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-search"></i></div>
+                <h3>SEO &amp; Marketing Tools</h3>
+                <p>Built to rank and built to re-engage. Technical SEO, meta management, and marketing integrations so you can drive traffic and bring customers back.</p>
+                <ul class="feature-list">
+                    <li>Schema markup &amp; sitemaps</li>
+                    <li>Meta title / description editor</li>
+                    <li>Google Analytics &amp; Meta Pixel</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-envelope-open-text"></i></div>
+                <h3>Email &amp; Notifications</h3>
+                <p>Automated transactional emails and WhatsApp notifications keep customers informed at every step.</p>
+                <ul class="feature-list">
+                    <li>Order confirmation emails</li>
+                    <li>Shipping update notifications</li>
+                    <li>Abandoned cart recovery</li>
+                </ul>
+            </div>
+
+            <div class="feature-card feature-card--accent" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-robot"></i></div>
+                <h3>AI Add-ons <span class="badge-new">Optional</span></h3>
+                <p>Take your store to the next level with intelligent features — product recommendations, AI search, chatbots, and dynamic pricing.</p>
+                <ul class="feature-list">
+                    <li>Smart product recommendations</li>
+                    <li>AI-powered search &amp; filters</li>
+                    <li>Store chatbot assistant</li>
+                    <li>Dynamic pricing engine</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══ TECH STACK ═════════════════════════════════════════════════════════ -->
+<section class="tech-stack">
+    <div class="container">
+        <div class="tech-inner">
+            <div class="tech-left">
+                <p class="section-label">Tech Stack</p>
+                <h2 class="section-title">Built with the<br>right tools.</h2>
+                <p class="section-sub">We use modern, battle-tested technologies — so your store is fast, secure, scalable, and easy to maintain.</p>
+                <a href="../index.html#contact" class="btn btn--primary">Discuss Your Tech Needs</a>
+            </div>
+            <div class="tech-right">
+                <div class="tech-grid">
+                    <div class="tech-card" data-reveal>
+                        <div class="tech-card__icon" style="background: rgba(0,0,0,0.06);">
+                            <i class="fab fa-react" style="color:#61dafb"></i>
+                        </div>
+                        <span>React / Next.js</span>
+                        <p>Fast, SEO-friendly frontend</p>
+                    </div>
+                    <div class="tech-card" data-reveal>
+                        <div class="tech-card__icon">
+                            <i class="fab fa-node-js" style="color:#68a063"></i>
+                        </div>
+                        <span>Node.js</span>
+                        <p>Scalable backend APIs</p>
+                    </div>
+                    <div class="tech-card" data-reveal>
+                        <div class="tech-card__icon">
+                            <i class="fas fa-database" style="color:#336791"></i>
+                        </div>
+                        <span>PostgreSQL</span>
+                        <p>Reliable relational DB</p>
+                    </div>
+                    <div class="tech-card" data-reveal>
+                        <div class="tech-card__icon">
+                            <i class="fas fa-bolt" style="color:#e25444"></i>
+                        </div>
+                        <span>Razorpay</span>
+                        <p>India's #1 payment gateway</p>
+                    </div>
+                    <div class="tech-card" data-reveal>
+                        <div class="tech-card__icon">
+                            <i class="fab fa-aws" style="color:#ff9900"></i>
+                        </div>
+                        <span>AWS / Vercel</span>
+                        <p>Globally fast hosting</p>
+                    </div>
+                    <div class="tech-card" data-reveal>
+                        <div class="tech-card__icon">
+                            <i class="fas fa-shield-alt" style="color:#00df81"></i>
+                        </div>
+                        <span>SSL / Security</span>
+                        <p>Fully encrypted &amp; PCI-safe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ PROCESS ════════════════════════════════════════════════════════════ -->
+<section class="process" id="process">
+    <div class="container">
+        <p class="section-label">How It Works</p>
+        <h2 class="section-title">From idea to live store<br>in weeks, not months.</h2>
+
+        <div class="process-track">
+            <div class="process-line"></div>
+
+            <div class="process-step" data-reveal>
+                <div class="process-step__dot"><span>01</span></div>
+                <div class="process-step__card">
+                    <div class="process-step__icon"><i class="fas fa-comments"></i></div>
+                    <h4>Discovery Call</h4>
+                    <p>We learn about your products, audience, and goals. A 20-minute call is enough to scope the whole project.</p>
+                    <span class="process-step__time">Day 1</span>
+                </div>
+            </div>
+
+            <div class="process-step" data-reveal>
+                <div class="process-step__dot"><span>02</span></div>
+                <div class="process-step__card">
+                    <div class="process-step__icon"><i class="fas fa-pencil-ruler"></i></div>
+                    <h4>Design</h4>
+                    <p>We produce full Figma mockups of your store — homepage, product pages, cart, and checkout — before writing a line of code.</p>
+                    <span class="process-step__time">Week 1–2</span>
+                </div>
+            </div>
+
+            <div class="process-step" data-reveal>
+                <div class="process-step__dot"><span>03</span></div>
+                <div class="process-step__card">
+                    <div class="process-step__icon"><i class="fas fa-code"></i></div>
+                    <h4>Development</h4>
+                    <p>We build your store — storefront, admin, payments, shipping, and all integrations. You get regular staging previews throughout.</p>
+                    <span class="process-step__time">Week 2–4</span>
+                </div>
+            </div>
+
+            <div class="process-step" data-reveal>
+                <div class="process-step__dot"><span>04</span></div>
+                <div class="process-step__card">
+                    <div class="process-step__icon"><i class="fas fa-vial"></i></div>
+                    <h4>Testing</h4>
+                    <p>End-to-end testing across devices and browsers. Full checkout flow validation, payment testing, and performance audit.</p>
+                    <span class="process-step__time">Week 4–5</span>
+                </div>
+            </div>
+
+            <div class="process-step" data-reveal>
+                <div class="process-step__dot"><span>05</span></div>
+                <div class="process-step__card">
+                    <div class="process-step__icon"><i class="fas fa-rocket"></i></div>
+                    <h4>Launch &amp; Handover</h4>
+                    <p>We deploy to your domain, do a live walkthrough, and hand over full access. Your 30-day support window begins.</p>
+                    <span class="process-step__time">Week 5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ PRICING ════════════════════════════════════════════════════════════ -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="pricing-header">
+            <p class="section-label">Pricing</p>
+            <h2 class="section-title">Honest, fixed-price<br>packages.</h2>
+            <p class="section-sub">No hourly billing, no hidden fees. You know exactly what you're paying before work begins.</p>
+        </div>
+
+        <div class="pricing-grid">
+
+            <div class="pricing-card" data-reveal>
+                <div class="pricing-card__tag">Starter</div>
+                <div class="pricing-card__price">
+                    <span class="price-from">From</span>
+                    <strong>₹40,000</strong>
+                </div>
+                <p class="pricing-card__desc">Perfect for small businesses launching their first online store.</p>
+                <ul class="pricing-list">
+                    <li><i class="fas fa-check"></i> Up to 50 products</li>
+                    <li><i class="fas fa-check"></i> Custom storefront design</li>
+                    <li><i class="fas fa-check"></i> Razorpay / UPI integration</li>
+                    <li><i class="fas fa-check"></i> Basic admin panel</li>
+                    <li><i class="fas fa-check"></i> Mobile responsive</li>
+                    <li><i class="fas fa-check"></i> 30-day support</li>
+                    <li class="pricing-list__muted"><i class="fas fa-times"></i> AI features</li>
+                    <li class="pricing-list__muted"><i class="fas fa-times"></i> Shipping integrations</li>
+                </ul>
+                <a href="../index.html#contact" class="btn btn--outline btn--full">Get Started</a>
+            </div>
+
+            <div class="pricing-card pricing-card--featured" data-reveal>
+                <div class="pricing-card__popular">Most Popular</div>
+                <div class="pricing-card__tag">Growth</div>
+                <div class="pricing-card__price">
+                    <span class="price-from">From</span>
+                    <strong>₹80,000</strong>
+                </div>
+                <p class="pricing-card__desc">A complete, full-featured store for growing businesses.</p>
+                <ul class="pricing-list">
+                    <li><i class="fas fa-check"></i> Unlimited products</li>
+                    <li><i class="fas fa-check"></i> Custom storefront design</li>
+                    <li><i class="fas fa-check"></i> All payment gateways</li>
+                    <li><i class="fas fa-check"></i> Full admin dashboard</li>
+                    <li><i class="fas fa-check"></i> Inventory management</li>
+                    <li><i class="fas fa-check"></i> Shipping integrations</li>
+                    <li><i class="fas fa-check"></i> SEO &amp; analytics setup</li>
+                    <li><i class="fas fa-check"></i> 30-day support</li>
+                </ul>
+                <a href="../index.html#contact" class="btn btn--primary btn--full">Get Started</a>
+            </div>
+
+            <div class="pricing-card" data-reveal>
+                <div class="pricing-card__tag">Scale</div>
+                <div class="pricing-card__price">
+                    <span class="price-from">From</span>
+                    <strong>₹1,60,000</strong>
+                </div>
+                <p class="pricing-card__desc">For high-volume businesses that need performance, AI, and scale.</p>
+                <ul class="pricing-list">
+                    <li><i class="fas fa-check"></i> Everything in Growth</li>
+                    <li><i class="fas fa-check"></i> AI recommendations</li>
+                    <li><i class="fas fa-check"></i> AI-powered search</li>
+                    <li><i class="fas fa-check"></i> Store chatbot</li>
+                    <li><i class="fas fa-check"></i> Multi-vendor support</li>
+                    <li><i class="fas fa-check"></i> Advanced analytics</li>
+                    <li><i class="fas fa-check"></i> Priority support (90 days)</li>
+                    <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                </ul>
+                <a href="../index.html#contact" class="btn btn--outline btn--full">Get Started</a>
+            </div>
+
+        </div>
+
+        <div class="pricing-note" data-reveal>
+            <i class="fas fa-info-circle"></i>
+            All prices are starting estimates. Final pricing is confirmed after a free discovery call based on your exact requirements. International clients may be invoiced in USD/GBP.
+        </div>
+    </div>
+</section>
+
+<!-- ══ FAQ ════════════════════════════════════════════════════════════════ -->
+<section class="faq">
+    <div class="container">
+        <div class="faq-inner">
+            <div class="faq-left">
+                <p class="section-label">FAQs</p>
+                <h2 class="section-title">Questions<br>answered.</h2>
+                <p class="section-sub">Still unsure? Just drop us a message — we'll reply same day.</p>
+                <a href="mailto:sparkforge2025@gmail.com" class="btn btn--primary">
+                    Ask Directly <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="faq-list" id="faqList">
+                <div class="faq-item">
+                    <button class="faq-item__q" aria-expanded="false">
+                        <span>Do I need to provide my own hosting?</span><i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__a">
+                        <p>No. We handle hosting setup as part of the project. We deploy on AWS, Vercel, or DigitalOcean depending on your needs. After launch, hosting costs are typically ₹1,000–₹3,000/month and are billed directly to you.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__q" aria-expanded="false">
+                        <span>Can I update products myself after launch?</span><i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__a">
+                        <p>Yes — every store includes an admin dashboard where you can add, edit, or remove products, manage orders, update pricing, and more, without any technical knowledge.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__q" aria-expanded="false">
+                        <span>Can you migrate my existing store to a new platform?</span><i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__a">
+                        <p>Yes. We've handled migrations from Shopify, WooCommerce, Wix, and custom platforms. We migrate products, customer data, order history, and SEO settings — with zero downtime.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__q" aria-expanded="false">
+                        <span>What payment gateways do you support?</span><i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__a">
+                        <p>We integrate Razorpay, Stripe, PayPal, PayU, and Cashfree for online payments. We also support UPI QR codes, COD (cash on delivery), and net banking out of the box.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__q" aria-expanded="false">
+                        <span>Will my store rank on Google?</span><i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__a">
+                        <p>All our stores are built with technical SEO as a baseline — clean URL structure, schema markup, sitemaps, meta tag management, and fast load times. We don't guarantee rankings (no one can), but we build a strong foundation for organic growth.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__q" aria-expanded="false">
+                        <span>How much does it cost to run the store after launch?</span><i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__a">
+                        <p>Typical ongoing costs: hosting ₹1,000–₹3,000/month, payment gateway fees (Razorpay charges ~2% per transaction), and your domain (~₹800/year). SparkForge charges nothing ongoing unless you opt into a maintenance plan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ OTHER SERVICES ═════════════════════════════════════════════════════ -->
+<section class="other-services">
+    <div class="container">
+        <p class="section-label">Explore More</p>
+        <h2 class="section-title">Other things<br>we build.</h2>
+        <div class="other-grid">
+            <a href="#" class="other-card" data-reveal>
+                <div class="other-card__icon"><i class="fas fa-layer-group"></i></div>
+                <h4>Agency Websites</h4>
+                <p>Portfolio-ready, lead-generating websites for agencies and studios.</p>
+                <span class="other-card__link">Learn more <i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="#" class="other-card" data-reveal>
+                <div class="other-card__icon"><i class="fas fa-building"></i></div>
+                <h4>Business Portals</h4>
+                <p>Custom dashboards, admin tools, and internal web applications.</p>
+                <span class="other-card__link">Learn more <i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="#" class="other-card" data-reveal>
+                <div class="other-card__icon"><i class="fas fa-robot"></i></div>
+                <h4>AI &amp; ML Integration</h4>
+                <p>Add intelligence to your product — chatbots, recommendations, and automation.</p>
+                <span class="other-card__link">Learn more <i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="#" class="other-card" data-reveal>
+                <div class="other-card__icon"><i class="fas fa-palette"></i></div>
+                <h4>Brand &amp; Design</h4>
+                <p>Visual identity, UI systems, and design that makes you memorable.</p>
+                <span class="other-card__link">Learn more <i class="fas fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ══ CTA STRIP ══════════════════════════════════════════════════════════ -->
+<section class="cta-strip">
+    <div class="container">
+        <div class="cta-strip__inner">
+            <div class="cta-strip__text">
+                <h2 class="cta-strip__title">Ready to launch<br>your store?</h2>
+                <p class="cta-strip__desc">Free discovery call. Fixed price. No fluff.</p>
+            </div>
+            <div class="cta-strip__actions">
+                <a href="../index.html#contact" class="btn btn--white">
+                    Get a Free Quote <i class="fas fa-arrow-right"></i>
+                </a>
+                <div class="cta-strip__contact">
+                    <a href="mailto:sparkforge2025@gmail.com">
+                        <i class="fas fa-envelope"></i> sparkforge2025@gmail.com
+                    </a>
+                    <a href="tel:+917835924050">
+                        <i class="fas fa-phone"></i> +91 78359 24050
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="../index.html" class="nav-logo">
+                    <div class="logo-mark logo-mark--inv">SF</div>
+                    <span class="logo-name logo-name--inv">SparkForge</span>
+                </a>
+                <p class="footer-brand__desc">We build the web — e-commerce stores, agency platforms, business portals, and more. Based in Delhi. Shipping globally.</p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/sparkforge2025" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5>Build</h5>
+                    <a href="#">E-Commerce</a>
+                    <a href="../index.html#services">Agency Websites</a>
+                    <a href="../index.html#services">Business Portals</a>
+                    <a href="../index.html#services">Brand &amp; Design</a>
+                    <a href="../index.html#services">AI Integration</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <a href="/About Us/about-us.html">About Us</a>
+                    <a href="/Carrer/sparkforge_careers.html">Careers</a>
+                    <a href="../index.html#contact">Contact</a>
+                    <a href="/Privacy Policy/privacy_policy_html.html">Privacy Policy</a>
+                    <a href="/Terms&Condition/sparkforge_terms_html.html">Terms of Service</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Reach Us</h5>
+                    <a href="mailto:sparkforge2025@gmail.com">sparkforge2025@gmail.com</a>
+                    <a href="tel:+917835924050">+91 78359 24050</a>
+                    <span>New Delhi, India</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 SparkForge. All rights reserved.</p>
+            <p>Built by SparkForge — with actual code.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ══ CHATBOT ════════════════════════════════════════════════════════════════ -->
+<div class="chatbot" id="chatbot">
+    <button class="chatbot__toggle" id="chatToggle" aria-label="Open chat">
+        <i class="fas fa-comment-dots" id="chatOpenIcon"></i>
+        <i class="fas fa-times" id="chatCloseIcon"></i>
+    </button>
+    <div class="chatbot__box" id="chatBox">
+        <div class="chatbot__header">
+            <div class="chatbot__avatar">SF</div>
+            <div><strong>SparkForge</strong><span>We reply fast ⚡</span></div>
+        </div>
+        <div class="chatbot__messages" id="chatMessages"></div>
+        <div class="chatbot__quick" id="chatQuick">
+            <button data-msg="How much does an e-commerce store cost?">Pricing?</button>
+            <button data-msg="How long does it take to build?">Timeline?</button>
+            <button data-msg="What payment gateways do you support?">Payments?</button>
+            <button data-msg="How do I get started?">Get started</button>
+        </div>
+        <div class="chatbot__input">
+            <input type="text" id="chatInput" placeholder="Ask about e-commerce…">
+            <button id="chatSend" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+
+<script src="ecommerce.js"></script>
+</body>
+</html>

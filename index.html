@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkForge — We Build the Web</title>
+    <meta name="description" content="SparkForge builds e-commerce stores, agency websites, business portals, and more. We don't consult — we build.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="Asset/SF logo 3.png" type="image/png">
+</head>
+<body>
+
+<!-- ══ NAVBAR ══════════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="#home" class="nav-logo">
+            <div class="logo-mark">SF</div>
+            <span class="logo-name">SparkForge</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="#contact" class="nav-cta">Start a Project</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="mobile-cta">Start a Project →</a>
+    </div>
+</nav>
+
+<!-- ══ HERO ═════════════════════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+
+    <div class="hero-content">
+        <div class="hero-badge">
+            <span class="hero-badge__dot"></span>
+            Now building for 2025 &amp; beyond
+        </div>
+
+        <h1 class="hero-title">
+            We don't<br>
+            <em>consult</em> —<br>
+            we <span class="hero-title__accent">build.</span>
+        </h1>
+
+        <p class="hero-desc">
+            SparkForge is a product company that ships real websites. E-commerce storefronts, agency platforms, business portals — built fast, built right.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#work" class="btn btn--primary">See Our Work</a>
+            <a href="#services" class="btn btn--ghost">What We Build ↓</a>
+        </div>
+
+        <div class="hero-stats">
+  <div class="stat">
+    <div class="stat__value-wrapper">
+      <strong class="stat__num" data-target="50">0</strong>
+      <span class="stat__plus">+</span>
+    </div>
+    <span class="stat__label">Sites Shipped</span>
+  </div>
+
+  <div class="stat-sep"></div>
+
+  <div class="stat">
+    <div class="stat__value-wrapper">
+      <strong class="stat__num" data-target="25">0</strong>
+      <span class="stat__plus">+</span>
+    </div>
+    <span class="stat__label">Happy Clients</span>
+  </div>
+
+  <div class="stat-sep"></div>
+
+  <div class="stat">
+    <div class="stat__value-wrapper">
+      <strong class="stat__num" data-target="3">0</strong>
+      <span class="stat__plus">+</span>
+    </div>
+    <span class="stat__label">Years Building</span>
+  </div>
+</div>
+
+    <div class="hero-scroll">
+        <span>scroll</span>
+        <div class="hero-scroll__line"></div>
+    </div>
+</section>
+
+<!-- ══ TICKER ═══════════════════════════════════════════════════════════════ -->
+<div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+        <span>E-Commerce Platforms</span><span class="ticker__dot">◆</span>
+        <span>Agency Websites</span><span class="ticker__dot">◆</span>
+        <span>Business Portals</span><span class="ticker__dot">◆</span>
+        <span>SaaS Dashboards</span><span class="ticker__dot">◆</span>
+        <span>Brand &amp; Design</span><span class="ticker__dot">◆</span>
+        <span>AI Integration</span><span class="ticker__dot">◆</span>
+        <span>E-Commerce Platforms</span><span class="ticker__dot">◆</span>
+        <span>Agency Websites</span><span class="ticker__dot">◆</span>
+        <span>Business Portals</span><span class="ticker__dot">◆</span>
+        <span>SaaS Dashboards</span><span class="ticker__dot">◆</span>
+        <span>Brand &amp; Design</span><span class="ticker__dot">◆</span>
+        <span>AI Integration</span><span class="ticker__dot">◆</span>
+    </div>
+</div>
+
+<!-- ══ SERVICES ══════════════════════════════════════════════════════════════ -->
+<section class="services" id="services">
+    <div class="container">
+        <p class="section-label">What We Build</p>
+        <h2 class="section-title">One company.<br>Many kinds of web.</h2>
+
+        <div class="services-grid">
+
+            <div class="service-card service-card--featured" data-reveal>
+                <div class="service-card__num">01</div>
+                <div class="service-card__icon"><i class="fas fa-shopping-bag"></i></div>
+                <h3 class="service-card__title">E-Commerce Stores</h3>
+                <p class="service-card__desc">Full-stack storefronts with product management, payments, inventory, and blazing-fast performance.</p>
+                <ul class="service-card__list">
+                    <li>Custom product catalogs</li>
+                    <li>Checkout &amp; payment integration</li>
+                    <li>Order &amp; inventory management</li>
+                    <li>Mobile-first design</li>
+                </ul>
+                <span class="service-card__badge">Most Popular</span>
+            </div>
+
+            <div class="service-card" data-reveal>
+                <div class="service-card__num">02</div>
+                <div class="service-card__icon"><i class="fas fa-layer-group"></i></div>
+                <h3 class="service-card__title">Agency Websites</h3>
+                <p class="service-card__desc">Portfolio-ready, client-converting websites for creative agencies, marketing firms, and studios.</p>
+                <ul class="service-card__list">
+                    <li>Portfolio &amp; case study layouts</li>
+                    <li>Lead generation forms</li>
+                    <li>CMS integration</li>
+                    <li>Performance optimised</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-reveal>
+                <div class="service-card__num">03</div>
+                <div class="service-card__icon"><i class="fas fa-building"></i></div>
+                <h3 class="service-card__title">Business Portals</h3>
+                <p class="service-card__desc">Internal tools, client portals, dashboards, and B2B platforms. If your business runs on the web, we build the thing it runs on.</p>
+                <ul class="service-card__list">
+                    <li>Authentication &amp; roles</li>
+                    <li>Data dashboards</li>
+                    <li>API integrations</li>
+                    <li>Custom workflows</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-reveal>
+                <div class="service-card__num">04</div>
+                <div class="service-card__icon"><i class="fas fa-palette"></i></div>
+                <h3 class="service-card__title">Brand &amp; Design</h3>
+                <p class="service-card__desc">Logos, visual systems, brand guidelines, and UI/UX design that makes your product look as good as it works.</p>
+                <ul class="service-card__list">
+                    <li>Logo &amp; identity systems</li>
+                    <li>Design systems</li>
+                    <li>UI/UX for web</li>
+                    <li>Brand guidelines</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-reveal>
+                <div class="service-card__num">05</div>
+                <div class="service-card__icon"><i class="fas fa-brain"></i></div>
+                <h3 class="service-card__title">AI &amp; ML Integration</h3>
+                <p class="service-card__desc">Smart product recommendations, chatbots, data pipelines, and ML-powered features baked into your product from day one.</p>
+                <ul class="service-card__list">
+                    <li>AI chatbots &amp; assistants</li>
+                    <li>Recommendation engines</li>
+                    <li>Data analytics pipelines</li>
+                    <li>Custom ML models</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══ PROCESS ═══════════════════════════════════════════════════════════════ -->
+<section class="process">
+    <div class="container">
+        <p class="section-label">How We Work</p>
+        <h2 class="section-title">Ship fast.<br>Ship right.</h2>
+
+        <div class="process-grid">
+            <div class="process-step" data-reveal>
+                <div class="process-step__num">01</div>
+                <h4 class="process-step__title">Discovery Call</h4>
+                <p class="process-step__desc">We understand your vision, audience, and goals. No fluff — just facts about what you need and when.</p>
+            </div>
+            <div class="process-step" data-reveal>
+                <div class="process-step__num">02</div>
+                <h4 class="process-step__title">Design Sprint</h4>
+                <p class="process-step__desc">We design the complete UI before a line of code is written. You see exactly what you're getting.</p>
+            </div>
+            <div class="process-step" data-reveal>
+                <div class="process-step__num">03</div>
+                <h4 class="process-step__title">Build &amp; Iterate</h4>
+                <p class="process-step__desc">Rapid development with weekly check-ins. You stay in the loop. We stay in the code.</p>
+            </div>
+            <div class="process-step" data-reveal>
+                <div class="process-step__num">04</div>
+                <h4 class="process-step__title">Launch &amp; Support</h4>
+                <p class="process-step__desc">We deploy, we monitor, and we stay available. Your launch day is not our last day.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ TEAM ══════════════════════════════════════════════════════════════════ -->
+<section class="team" id="team">
+    <div class="container">
+        <p class="section-label">The Team</p>
+        <h2 class="section-title">Built by builders.</h2>
+        <p class="section-sub">We're not account managers. Everyone at SparkForge ships code, design, or strategy — sometimes all three.</p>
+
+        <div class="team-grid">
+
+            <div class="team-card" data-reveal>
+                <div class="team-card__photo">
+                    <img src="Asset/Mann PFP.jpg" alt="Mann Gupta"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="team-card__initial">MG</div>
+                </div>
+                <div class="team-card__body">
+                    <h4 class="team-card__name">Mann Gupta</h4>
+                    <span class="team-card__role">Founder &amp; CEO</span>
+                    <p class="team-card__bio">Started as a digital marketer, built SparkForge from scratch. Leads vision, growth strategy, and client relationships.</p>
+                    <div class="team-card__links">
+                        <a href="https://www.linkedin.com/in/mann-gupta-8067bb348/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card" data-reveal>
+                <div class="team-card__photo">
+                    <img src="Asset/Ramanuz PFP.png" alt="Ramanuz Kashyap"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="team-card__initial">RK</div>
+                </div>
+                <div class="team-card__body">
+                    <h4 class="team-card__name">Ramanuz Kashyap</h4>
+                    <span class="team-card__role">Lead Developer</span>
+                    <p class="team-card__bio">Game dev turned web architect. Builds our most complex platforms from the ground up with clean, fast code.</p>
+                    <div class="team-card__links">
+                        <a href="https://www.linkedin.com/in/ramanuz-kashyap/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Ramanuz4" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                        <a href="https://nuzcode.xyz/" target="_blank" rel="noopener"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card" data-reveal>
+                <div class="team-card__photo">
+                    <img src="Asset/Kushal PFP.png" alt="Kushal Malviya"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="team-card__initial">KM</div>
+                </div>
+                <div class="team-card__body">
+                    <h4 class="team-card__name">Kushal Malviya</h4>
+                    <span class="team-card__role">AI / ML Engineer</span>
+                    <p class="team-card__bio">Turns raw data into working AI. Builds recommendation engines and the intelligent layer inside our products.</p>
+                    <div class="team-card__links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card" data-reveal>
+                <div class="team-card__photo">
+                    <img src="Asset/Ashmeet PFP.jpg" alt="Ashmeet Singh"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="team-card__initial">AS</div>
+                </div>
+                <div class="team-card__body">
+                    <h4 class="team-card__name">Ashmeet Singh</h4>
+                    <span class="team-card__role">AI / ML Engineer</span>
+                    <p class="team-card__bio">Deep learning specialist. Builds models that actually work in production — not just in notebooks.</p>
+                    <div class="team-card__links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══ CONTACT ═══════════════════════════════════════════════════════════════ -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-wrap">
+
+            <div class="contact-info">
+                <p class="section-label">Get In Touch</p>
+                <h2 class="section-title">Let's build<br>something.</h2>
+                <p class="contact-info__desc">Have a project in mind? Drop us a message and we'll get back within 24 hours.</p>
+
+                <div class="contact-items">
+                    <a href="mailto:sparkforge2025@gmail.com" class="contact-item">
+                        <div class="contact-item__icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <span class="contact-item__label">Email</span>
+                            <span class="contact-item__val">sparkforge2025@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+917835924050" class="contact-item">
+                        <div class="contact-item__icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <span class="contact-item__label">Phone</span>
+                            <span class="contact-item__val">+91 78359 24050</span>
+                        </div>
+                    </a>
+                    <div class="contact-item">
+                        <div class="contact-item__icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <span class="contact-item__label">Based in</span>
+                            <span class="contact-item__val">New Delhi, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrap">
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="fname">Your Name</label>
+                            <input type="text" id="fname" name="name" placeholder="e.g. Priya Sharma" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" name="email" placeholder="you@company.com" required>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="ftype">What are you building?</label>
+                        <select id="ftype" name="project_type" required>
+                            <option value="">Select project type</option>
+                            <option value="ecommerce">E-Commerce Store</option>
+                            <option value="agency">Agency Website</option>
+                            <option value="portal">Business Portal / Dashboard</option>
+                            <option value="brand">Brand &amp; Design</option>
+                            <option value="ai">AI / ML Feature</option>
+                            <option value="other">Something else</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="fmsg">Tell us more</label>
+                        <textarea id="fmsg" name="message" rows="4" placeholder="What does it do? Who's it for? When do you need it?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full" id="formSubmitBtn">
+                        <span class="btn__text">Send Message</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        Message sent! We'll reply within 24 hours.
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#home" class="nav-logo">
+                    <div class="logo-mark logo-mark--inv">SF</div>
+                    <span class="logo-name logo-name--inv">SparkForge</span>
+                </a>
+                <p class="footer-brand__desc">We build the web — e-commerce stores, agency platforms, business portals, and more. Based in Delhi. Shipping globally.</p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/sparkforge2025" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5>Build</h5>
+                    <a href="/E-Commerce/ecommerce.html">E-Commerce</a>
+                    <a href="/Agency/agency.html">Agency Websites</a>
+                    <a href="/Business Portal/portal.html">Business Portals</a>
+                    <a href="/Brand Design/brand.html">Brand &amp; Design</a>
+                    <a href="/AI Integration/ai.html">AI Integration</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <a href="/About Us/about-us.html">About Us</a>
+                    <a href="/careers/careers.html">Careers</a>
+                    <a href="/Contact/contact.html">Contact</a>
+                    <a href="/Privacy Policy/privacy.html">Privacy Policy</a>
+                    <a href="/Terms and Conditions/terms.html">Terms of Service</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Reach Us</h5>
+                    <a href="mailto:sparkforge2025@gmail.com">sparkforge2025@gmail.com</a>
+                    <a href="tel:+917835924050">+91 78359 24050</a>
+                    <span>New Delhi, India</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 SparkForge. All rights reserved.</p>
+            <p>Built by SparkForge — with actual code.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ══ CHATBOT ═══════════════════════════════════════════════════════════════ -->
+<div class="chatbot" id="chatbot">
+    <button class="chatbot__toggle" id="chatToggle" aria-label="Open chat">
+        <i class="fas fa-comment-dots" id="chatOpenIcon"></i>
+        <i class="fas fa-times" id="chatCloseIcon"></i>
+    </button>
+
+    <div class="chatbot__box" id="chatBox">
+        <div class="chatbot__header">
+            <div class="chatbot__avatar">SF</div>
+            <div>
+                <strong>SparkForge</strong>
+                <span>We reply fast ⚡</span>
+            </div>
+        </div>
+        <div class="chatbot__messages" id="chatMessages"></div>
+        <div class="chatbot__quick" id="chatQuick">
+            <button data-msg="What do you build?">What do you build?</button>
+            <button data-msg="How much does it cost?">Pricing</button>
+            <button data-msg="Tell me about the team">The team</button>
+            <button data-msg="How do I get started?">Get started</button>
+        </div>
+        <div class="chatbot__input">
+            <input type="text" id="chatInput" placeholder="Ask anything…" autocomplete="off">
+            <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

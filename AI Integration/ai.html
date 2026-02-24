@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Integration — SparkForge</title>
+    <meta name="description" content="SparkForge builds AI chatbots, recommendation engines, data pipelines, and custom ML models baked into your product from day one.">
+    <link rel="stylesheet" href="ai-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="../Asset/SF logo 3.png" type="image/png">
+</head>
+<body>
+
+<!-- ══ NAVBAR ══════════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+            <div class="logo-mark">SF</div>
+            <span class="logo-name">SparkForge</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="../index.html#services">Services</a></li>
+            <li><a href="../index.html#work">Our Work</a></li>
+            <li><a href="../index.html#team">Team</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="../index.html#contact" class="nav-cta">Start a Project</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#work">Our Work</a>
+        <a href="../index.html#team">Team</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="../index.html#contact" class="mobile-cta">Start a Project →</a>
+    </div>
+</nav>
+
+<!-- ══ SERVICE HERO ═══════════════════════════════════════════════════════ -->
+<section class="svc-hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-particles">
+        <div class="particle particle--1"></div>
+        <div class="particle particle--2"></div>
+        <div class="particle particle--3"></div>
+        <div class="particle particle--4"></div>
+        <div class="particle particle--5"></div>
+    </div>
+
+    <div class="container">
+        <div class="svc-hero__inner">
+            <div class="svc-hero__content" data-reveal>
+                <a href="../index.html#services" class="breadcrumb">
+                    <i class="fas fa-arrow-left"></i> All Services
+                </a>
+                <div class="svc-hero__badge">
+                    <i class="fas fa-brain"></i>
+                    Service 05
+                </div>
+                <h1 class="svc-hero__title">
+                    AI<br>
+                    <em>Integration</em><br>
+                    <span class="accent">that ships.</span>
+                </h1>
+                <p class="svc-hero__desc">
+                    Smart product recommendations, chatbots, data pipelines, and ML-powered features baked into your product from day one. Not demos — deployed, production-ready AI.
+                </p>
+                <div class="svc-hero__actions">
+                    <a href="../index.html#contact" class="btn btn--primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+                    <a href="#features" class="btn btn--ghost">See What We Build ↓</a>
+                </div>
+                <div class="svc-hero__meta">
+                    <div class="meta-item">
+                        <strong>₹40k–₹2L+</strong>
+                        <span>Starting Range</span>
+                    </div>
+                    <div class="meta-sep"></div>
+                    <div class="meta-item">
+                        <strong>3–10 Weeks</strong>
+                        <span>Delivery Time</span>
+                    </div>
+                    <div class="meta-sep"></div>
+                    <div class="meta-item">
+                        <strong>Production</strong>
+                        <span>Not Just Demos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="svc-hero__visual" data-reveal>
+                <div class="ai-mockup">
+                    <!-- Chat window -->
+                    <div class="ai-chat-window">
+                        <div class="ai-chat-header">
+                            <div class="ai-chat-dot ai-chat-dot--pulse"></div>
+                            <span>AI Assistant</span>
+                            <span class="ai-chat-status">Online</span>
+                        </div>
+                        <div class="ai-chat-body" id="aiChatBody">
+                            <div class="ai-msg ai-msg--bot">
+                                <div class="ai-msg__avatar">AI</div>
+                                <div class="ai-msg__bubble">Hey! How can I help you today?</div>
+                            </div>
+                            <div class="ai-msg ai-msg--user">
+                                <div class="ai-msg__bubble">Show me top products for me</div>
+                            </div>
+                            <div class="ai-msg ai-msg--bot">
+                                <div class="ai-msg__avatar">AI</div>
+                                <div class="ai-msg__bubble ai-msg__bubble--typing" id="aiTyping">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Model stats card -->
+                    <div class="ai-stats-card">
+                        <div class="ai-stats-label">Model Performance</div>
+                        <div class="ai-stats-row">
+                            <span>Accuracy</span>
+                            <div class="ai-progress-bar">
+                                <div class="ai-progress-fill" style="width: 94%"></div>
+                            </div>
+                            <span class="ai-stat-val">94%</span>
+                        </div>
+                        <div class="ai-stats-row">
+                            <span>Response</span>
+                            <div class="ai-progress-bar">
+                                <div class="ai-progress-fill" style="width: 78%"></div>
+                            </div>
+                            <span class="ai-stat-val">120ms</span>
+                        </div>
+                        <div class="ai-stats-row">
+                            <span>Uptime</span>
+                            <div class="ai-progress-bar">
+                                <div class="ai-progress-fill" style="width: 99%"></div>
+                            </div>
+                            <span class="ai-stat-val">99.9%</span>
+                        </div>
+                    </div>
+
+                    <!-- Pipeline visual -->
+                    <div class="ai-pipeline-card">
+                        <div class="ai-pipeline-label">Data Pipeline</div>
+                        <div class="ai-pipeline-flow">
+                            <div class="ai-pipeline-node">
+                                <i class="fas fa-database"></i>
+                                <span>Ingest</span>
+                            </div>
+                            <div class="ai-pipeline-arrow">→</div>
+                            <div class="ai-pipeline-node ai-pipeline-node--active">
+                                <i class="fas fa-cogs"></i>
+                                <span>Process</span>
+                            </div>
+                            <div class="ai-pipeline-arrow">→</div>
+                            <div class="ai-pipeline-node">
+                                <i class="fas fa-brain"></i>
+                                <span>Predict</span>
+                            </div>
+                            <div class="ai-pipeline-arrow">→</div>
+                            <div class="ai-pipeline-node">
+                                <i class="fas fa-bolt"></i>
+                                <span>Deliver</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mock-floating mock-floating--1"><i class="fas fa-microchip"></i></div>
+                    <div class="mock-floating mock-floating--2">
+                        <i class="fas fa-check"></i>
+                        <span>Live</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ TICKER ════════════════════════════════════════════════════════════ -->
+<div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+        <span>AI Chatbots</span><span class="ticker__dot">◆</span>
+        <span>Recommendation Engines</span><span class="ticker__dot">◆</span>
+        <span>Data Pipelines</span><span class="ticker__dot">◆</span>
+        <span>Custom ML Models</span><span class="ticker__dot">◆</span>
+        <span>LLM Integration</span><span class="ticker__dot">◆</span>
+        <span>Predictive Analytics</span><span class="ticker__dot">◆</span>
+        <span>AI Chatbots</span><span class="ticker__dot">◆</span>
+        <span>Recommendation Engines</span><span class="ticker__dot">◆</span>
+        <span>Data Pipelines</span><span class="ticker__dot">◆</span>
+        <span>Custom ML Models</span><span class="ticker__dot">◆</span>
+        <span>LLM Integration</span><span class="ticker__dot">◆</span>
+        <span>Predictive Analytics</span><span class="ticker__dot">◆</span>
+    </div>
+</div>
+
+<!-- ══ WHAT WE BUILD ═════════════════════════════════════════════════════ -->
+<section class="features" id="features">
+    <div class="container">
+        <p class="section-label">What We Build</p>
+        <h2 class="section-title">AI that does real work.<br>In your real product.</h2>
+        <p class="section-sub">We build AI features that go to production — not prototypes that sit in a notebook.</p>
+
+        <div class="features-grid">
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-comment-dots"></i></div>
+                <h3>AI Chatbots & Assistants</h3>
+                <p>Intelligent, context-aware chatbots powered by LLMs like GPT-4 and Claude. Trained on your data, embedded in your product, and built to handle real customer conversations.</p>
+            </div>
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-th"></i></div>
+                <h3>Recommendation Engines</h3>
+                <p>Collaborative filtering, content-based, and hybrid recommendation systems. Drive product discovery, content engagement, or personalised user journeys at scale.</p>
+            </div>
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-stream"></i></div>
+                <h3>Data Analytics Pipelines</h3>
+                <p>End-to-end pipelines that ingest raw data, clean it, transform it, and surface insights in real time. From CSV exports to live streaming data — we handle both.</p>
+            </div>
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-project-diagram"></i></div>
+                <h3>Custom ML Models</h3>
+                <p>Classifiers, regression models, NLP pipelines, and computer vision systems trained on your specific domain data. Built to outperform off-the-shelf solutions.</p>
+            </div>
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-search"></i></div>
+                <h3>Semantic Search</h3>
+                <p>Vector-based search that understands meaning, not just keywords. Users find exactly what they're looking for — even when they don't use the exact right words.</p>
+            </div>
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-file-alt"></i></div>
+                <h3>Document Intelligence</h3>
+                <p>Extract structured data from unstructured documents — contracts, invoices, forms, and reports — using OCR and NLP. Automate manual review workflows entirely.</p>
+            </div>
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Predictive Analytics</h3>
+                <p>Churn prediction, demand forecasting, fraud detection, lead scoring. ML models that turn your historical data into forward-looking business intelligence.</p>
+            </div>
+            <div class="feature-card" data-reveal>
+                <div class="feature-card__icon"><i class="fas fa-robot"></i></div>
+                <h3>AI Workflow Automation</h3>
+                <p>Automate repetitive tasks using AI agents — content classification, email triage, data enrichment, report generation. Your team focuses on what only humans can do.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ HOW WE INTEGRATE ══════════════════════════════════════════════════ -->
+<section class="integrate">
+    <div class="container">
+        <p class="section-label">Integration Approach</p>
+        <h2 class="section-title">We plug AI into what<br>you already have.</h2>
+        <p class="section-sub">No ripping and replacing. We add AI to your existing product, stack, and infrastructure — without disrupting what already works.</p>
+
+        <div class="integrate-grid">
+            <div class="integrate-item" data-reveal>
+                <div class="integrate-item__icon"><i class="fas fa-plug"></i></div>
+                <div>
+                    <strong>API-First Integration</strong>
+                    <p>We expose AI features as clean REST or GraphQL APIs that slot directly into your existing frontend or backend — no architectural overhaul required.</p>
+                </div>
+            </div>
+            <div class="integrate-item" data-reveal>
+                <div class="integrate-item__icon"><i class="fas fa-database"></i></div>
+                <div>
+                    <strong>Your Data, Your Models</strong>
+                    <p>We fine-tune models on your proprietary data. Nothing is sent to third-party training pipelines — your data stays yours, your models stay yours.</p>
+                </div>
+            </div>
+            <div class="integrate-item" data-reveal>
+                <div class="integrate-item__icon"><i class="fas fa-cloud"></i></div>
+                <div>
+                    <strong>Cloud-Agnostic Deployment</strong>
+                    <p>Deploy on AWS, GCP, Azure, or your own infrastructure. We containerise everything with Docker and Kubernetes for portability and scale.</p>
+                </div>
+            </div>
+            <div class="integrate-item" data-reveal>
+                <div class="integrate-item__icon"><i class="fas fa-tachometer-alt"></i></div>
+                <div>
+                    <strong>Monitoring & Drift Detection</strong>
+                    <p>Models degrade over time. We set up monitoring dashboards, performance alerts, and automated retraining triggers so your AI stays accurate.</p>
+                </div>
+            </div>
+            <div class="integrate-item" data-reveal>
+                <div class="integrate-item__icon"><i class="fas fa-shield-alt"></i></div>
+                <div>
+                    <strong>Safety & Guardrails</strong>
+                    <p>Every LLM integration ships with output filtering, prompt injection protection, rate limiting, and content safety layers. Responsible AI by default.</p>
+                </div>
+            </div>
+            <div class="integrate-item" data-reveal>
+                <div class="integrate-item__icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                <div>
+                    <strong>Built to Scale</strong>
+                    <p>Async queues, autoscaling inference endpoints, and caching layers mean your AI feature handles 10 users and 10,000 users without re-architecture.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ WHO IS IT FOR ═════════════════════════════════════════════════════ -->
+<section class="who-for">
+    <div class="container">
+        <div class="who-for__inner">
+            <div class="who-for__text" data-reveal>
+                <p class="section-label">Who It's For</p>
+                <h2 class="section-title">AI for products<br>that need to<br><em>actually work.</em></h2>
+                <p class="section-sub">We don't build AI for the sake of a press release. We build it because it genuinely makes your product better.</p>
+
+                <div class="who-list">
+                    <div class="who-item">
+                        <div class="who-item__icon"><i class="fas fa-store"></i></div>
+                        <div>
+                            <strong>E-Commerce Platforms</strong>
+                            <p>Personalised product recommendations, visual search, smart sizing assistants, and demand forecasting that increase basket size and reduce returns.</p>
+                        </div>
+                    </div>
+                    <div class="who-item">
+                        <div class="who-item__icon"><i class="fas fa-headset"></i></div>
+                        <div>
+                            <strong>Customer-Facing Products</strong>
+                            <p>Replace FAQ pages and support queues with intelligent assistants that resolve 70%+ of queries without a human in the loop.</p>
+                        </div>
+                    </div>
+                    <div class="who-item">
+                        <div class="who-item__icon"><i class="fas fa-chart-pie"></i></div>
+                        <div>
+                            <strong>Data-Rich Businesses</strong>
+                            <p>You're sitting on months or years of transaction, behavioural, or operational data. We turn that into a competitive advantage with ML.</p>
+                        </div>
+                    </div>
+                    <div class="who-item">
+                        <div class="who-item__icon"><i class="fas fa-building"></i></div>
+                        <div>
+                            <strong>Enterprises with Manual Workflows</strong>
+                            <p>Document processing, data entry, report generation, and classification tasks that cost your team hours every day and can be automated with AI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="who-for__visual" data-reveal>
+                <div class="testimonial-stack">
+                    <div class="testimonial-card testimonial-card--top">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"SparkForge built a recommendation engine into our store in 4 weeks. Average order value went up 22% in the first month."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">AK</div>
+                            <div>
+                                <strong>Arjun K.</strong>
+                                <span>Founder, ShelfMate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card testimonial-card--bottom">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"The AI assistant they built handles 74% of our support tickets automatically. Our team finally has time for the hard stuff."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">SM</div>
+                            <div>
+                                <strong>Shreya M.</strong>
+                                <span>CTO, Zepth</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-badge floating-badge--1">
+                        <i class="fas fa-bolt"></i>
+                        <span>Production-ready</span>
+                    </div>
+                    <div class="floating-badge floating-badge--2">
+                        <i class="fas fa-lock"></i>
+                        <span>Your data stays yours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ PROCESS ════════════════════════════════════════════════════════════ -->
+<section class="process">
+    <div class="container">
+        <p class="section-label">How We Work</p>
+        <h2 class="section-title">From idea to<br>inference in production.</h2>
+
+        <div class="process-grid">
+            <div class="process-step" data-reveal>
+                <div class="process-step__num">01</div>
+                <div class="process-step__icon"><i class="fas fa-microscope"></i></div>
+                <h3>AI Feasibility Audit</h3>
+                <p>We assess your data, define the right problem framing, and determine which AI approach will deliver the most value — before writing a single line of model code.</p>
+            </div>
+            <div class="process-step" data-reveal>
+                <div class="process-step__num">02</div>
+                <div class="process-step__icon"><i class="fas fa-flask"></i></div>
+                <h3>Proof of Concept</h3>
+                <p>We build a fast PoC to validate the approach against your real data. You see actual model performance numbers — accuracy, latency, edge cases — before committing to a full build.</p>
+            </div>
+            <div class="process-step" data-reveal>
+                <div class="process-step__num">03</div>
+                <div class="process-step__icon"><i class="fas fa-cogs"></i></div>
+                <h3>Production Build</h3>
+                <p>PoC validated — we productionise it. API wrappers, error handling, logging, autoscaling, and integration with your existing product. Built to handle real load.</p>
+            </div>
+            <div class="process-step" data-reveal>
+                <div class="process-step__num">04</div>
+                <div class="process-step__icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Monitor & Improve</h3>
+                <p>Post-launch, we monitor model performance, collect feedback signals, and retrain on new data. AI that gets smarter over time, not one that quietly drifts.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ TECH STACK ══════════════════════════════════════════════════════════ -->
+<section class="tech-stack">
+    <div class="container">
+        <p class="section-label">Technology</p>
+        <h2 class="section-title">Battle-tested AI stack.<br>No science experiments.</h2>
+        <p class="section-sub">We use proven tools — not every shiny new framework. Your AI runs on infrastructure you can trust.</p>
+
+        <div class="tech-grid">
+            <div class="tech-item" data-reveal>
+                <div class="tech-item__icon"><i class="fab fa-python"></i></div>
+                <span>Python</span>
+            </div>
+            <div class="tech-item" data-reveal>
+                <div class="tech-item__icon"><i class="fas fa-fire"></i></div>
+                <span>PyTorch</span>
+            </div>
+            <div class="tech-item" data-reveal>
+                <div class="tech-item__icon"><i class="fas fa-brain"></i></div>
+                <span>OpenAI / Claude</span>
+            </div>
+            <div class="tech-item" data-reveal>
+                <div class="tech-item__icon"><i class="fas fa-link"></i></div>
+                <span>LangChain</span>
+            </div>
+            <div class="tech-item" data-reveal>
+                <div class="tech-item__icon"><i class="fas fa-vector-square"></i></div>
+                <span>Pinecone / FAISS</span>
+            </div>
+            <div class="tech-item" data-reveal>
+                <div class="tech-item__icon"><i class="fab fa-aws"></i></div>
+                <span>AWS SageMaker</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ PRICING ════════════════════════════════════════════════════════════ -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <p class="section-label">Pricing</p>
+        <h2 class="section-title">Scoped to the problem.<br>Priced to be fair.</h2>
+        <p class="section-sub">AI projects vary enormously in scope. Here's a starting framework — your quote will be specific to your use case.</p>
+
+        <div class="pricing-grid">
+            <div class="pricing-card" data-reveal>
+                <div class="pricing-card__header">
+                    <h3>Feature Add-On</h3>
+                    <div class="pricing-card__price">
+                        <span class="price__currency">₹</span>
+                        <span class="price__num">40,000</span>
+                    </div>
+                    <p>A single AI-powered feature integrated into an existing product — chatbot, search, or a simple classifier.</p>
+                </div>
+                <ul class="pricing-card__list">
+                    <li><i class="fas fa-check"></i> 1 AI feature</li>
+                    <li><i class="fas fa-check"></i> LLM or pre-trained model</li>
+                    <li><i class="fas fa-check"></i> REST API endpoint</li>
+                    <li><i class="fas fa-check"></i> Basic monitoring</li>
+                    <li><i class="fas fa-check"></i> Deployment + docs</li>
+                    <li class="muted"><i class="fas fa-times"></i> Custom model training</li>
+                    <li class="muted"><i class="fas fa-times"></i> Data pipeline</li>
+                </ul>
+                <a href="../index.html#contact" class="btn btn--ghost-dark">Get Started →</a>
+            </div>
+
+            <div class="pricing-card pricing-card--featured" data-reveal>
+                <div class="pricing-card__badge">Most Popular</div>
+                <div class="pricing-card__header">
+                    <h3>AI Product</h3>
+                    <div class="pricing-card__price">
+                        <span class="price__currency">₹</span>
+                        <span class="price__num">1,00,000</span>
+                    </div>
+                    <p>A complete AI-powered product feature — custom trained, integrated, monitored, and production-deployed.</p>
+                </div>
+                <ul class="pricing-card__list">
+                    <li><i class="fas fa-check"></i> Custom model training</li>
+                    <li><i class="fas fa-check"></i> Data pipeline setup</li>
+                    <li><i class="fas fa-check"></i> Full API integration</li>
+                    <li><i class="fas fa-check"></i> PoC + production build</li>
+                    <li><i class="fas fa-check"></i> Performance monitoring</li>
+                    <li><i class="fas fa-check"></i> 30-day post-launch support</li>
+                    <li><i class="fas fa-check"></i> Model documentation</li>
+                </ul>
+                <a href="../index.html#contact" class="btn btn--primary">Get Started <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="pricing-card" data-reveal>
+                <div class="pricing-card__header">
+                    <h3>AI Platform</h3>
+                    <div class="pricing-card__price">
+                        <span class="price__currency">₹</span>
+                        <span class="price__num">2,00,000+</span>
+                    </div>
+                    <p>Multiple AI systems working together — recommendations, NLP, analytics, and automation at enterprise scale.</p>
+                </div>
+                <ul class="pricing-card__list">
+                    <li><i class="fas fa-check"></i> Multiple AI systems</li>
+                    <li><i class="fas fa-check"></i> End-to-end data platform</li>
+                    <li><i class="fas fa-check"></i> Drift detection + retraining</li>
+                    <li><i class="fas fa-check"></i> A/B testing framework</li>
+                    <li><i class="fas fa-check"></i> MLOps infrastructure</li>
+                    <li><i class="fas fa-check"></i> Dedicated AI engineer</li>
+                    <li><i class="fas fa-check"></i> SLA + retainer option</li>
+                </ul>
+                <a href="../index.html#contact" class="btn btn--ghost-dark">Let's Talk →</a>
+            </div>
+        </div>
+
+        <p class="pricing-note">All prices are indicative. Final quotes depend on data complexity, model type, and integration scope. <a href="../index.html#contact">Get a free estimate.</a></p>
+    </div>
+</section>
+
+<!-- ══ FAQ ══════════════════════════════════════════════════════════════════ -->
+<section class="faq">
+    <div class="container">
+        <div class="faq__inner">
+            <div class="faq__header" data-reveal>
+                <p class="section-label">FAQ</p>
+                <h2 class="section-title">Questions?<br>We've got answers.</h2>
+            </div>
+            <div class="faq__list">
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-q" aria-expanded="false">
+                        Do we need a lot of data to get started?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-a">
+                        <p>It depends on the type of AI. For LLM integrations and chatbots, you can start with very little data — we use pre-trained models and fine-tune with even small datasets. For custom ML models, we'll audit your existing data during discovery and tell you honestly if it's sufficient or what you'd need to collect.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-q" aria-expanded="false">
+                        Do you use GPT-4 / Claude or train your own models?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-a">
+                        <p>Both — it depends on the use case. For conversational AI and document intelligence, we typically integrate with leading LLM APIs (OpenAI, Anthropic) and add your data as context via RAG. For structured prediction tasks like recommendations or churn modelling, we train custom models on your data. We always recommend the approach that gives the best results for your specific problem.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-q" aria-expanded="false">
+                        Is our data safe when using AI APIs?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes. We use enterprise API agreements where customer data is not used for model training by providers. For highly sensitive data, we can deploy open-source models (Llama, Mistral) entirely on your own infrastructure so data never leaves your environment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-q" aria-expanded="false">
+                        What if the AI gives wrong or harmful outputs?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-a">
+                        <p>Every LLM integration we build includes output guardrails — content filters, hallucination detection, confidence thresholds, and fallback paths. We also implement human-in-the-loop checks for high-stakes workflows. Responsible AI isn't optional for us — it's part of the default build.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-q" aria-expanded="false">
+                        Can you add AI to our existing product without rebuilding it?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes — that's usually how it works. We expose AI capabilities as APIs that plug into your existing product. Your tech stack stays intact; we add a new layer on top. Most integrations don't require any changes to your existing frontend or database.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-q" aria-expanded="false">
+                        How do you keep the model accurate over time?
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-a">
+                        <p>We set up model monitoring dashboards that track prediction quality, data drift, and user feedback signals. When performance degrades beyond a threshold, alerts fire and a retraining pipeline kicks off automatically. Your AI improves over time rather than silently getting worse.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ CTA ═══════════════════════════════════════════════════════════════ -->
+<section class="service-cta">
+    <div class="container">
+        <div class="service-cta__inner" data-reveal>
+            <div class="service-cta__orb"></div>
+            <p class="section-label">Ready to Start?</p>
+            <h2>Your product deserves<br>AI that <em>actually works.</em></h2>
+            <p>Tell us your use case and we'll come back with a plan — and honest advice on what's possible.</p>
+            <div class="service-cta__actions">
+                <a href="../index.html#contact" class="btn btn--primary">Start a Project <i class="fas fa-arrow-right"></i></a>
+                <a href="mailto:sparkforge2025@gmail.com" class="btn btn--ghost">sparkforge2025@gmail.com</a>
+            </div>
+            <div class="service-cta__meta">
+                <span><i class="fas fa-clock"></i> Reply within 24 hrs</span>
+                <span><i class="fas fa-phone"></i> +91 78359 24050</span>
+                <span><i class="fas fa-map-marker-alt"></i> New Delhi, India</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="../index.html" class="nav-logo">
+                    <div class="logo-mark logo-mark--inv">SF</div>
+                    <span class="logo-name logo-name--inv">SparkForge</span>
+                </a>
+                <p class="footer-brand__desc">We build the web — e-commerce stores, agency platforms, business portals, and more. Based in Delhi. Shipping globally.</p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/sparkforge2025" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5>Build</h5>
+                    <a href="/E-Commerce/ecommerce.html">E-Commerce</a>
+                    <a href="/Agency/agency.html">Agency Websites</a>
+                    <a href="/Business Portals/portal.html">Business Portals</a>
+                    <a href="/Brand Design/brand.html">Brand Design</a>
+                    <a href="#">AI Integration</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <a href="/About Us/about-us.html">About Us</a>
+                    <a href="/careers/careers.html">Careers</a>
+                    <a href="/Contact/contact.html">Contact</a>
+                    <a href="/Privacy Policy/privacy.html">Privacy Policy</a>
+                    <a href="/Terms and Conditions/terms.html">Terms of Service</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Reach Us</h5>
+                    <a href="mailto:sparkforge2025@gmail.com">sparkforge2025@gmail.com</a>
+                    <a href="tel:+917835924050">+91 78359 24050</a>
+                    <span>New Delhi, India</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 SparkForge. All rights reserved.</p>
+            <p>Built by SparkForge — with actual code.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ══ CHATBOT ════════════════════════════════════════════════════════════ -->
+<div class="chatbot" id="chatbot">
+    <button class="chatbot__toggle" id="chatToggle" aria-label="Open chat">
+        <i class="fas fa-comment-dots" id="chatOpenIcon"></i>
+        <i class="fas fa-times" id="chatCloseIcon"></i>
+    </button>
+    <div class="chatbot__box" id="chatBox">
+        <div class="chatbot__header">
+            <div class="chatbot__avatar">SF</div>
+            <div>
+                <strong>SparkForge</strong>
+                <span>We reply fast ⚡</span>
+            </div>
+        </div>
+        <div class="chatbot__messages" id="chatMessages"></div>
+        <div class="chatbot__quick" id="chatQuick">
+            <button data-msg="How much does AI integration cost?">Pricing</button>
+            <button data-msg="What AI features do you build?">What you build</button>
+            <button data-msg="Is our data safe with AI APIs?">Data safety</button>
+            <button data-msg="How do I get started?">Get started</button>
+        </div>
+        <div class="chatbot__input">
+            <input type="text" id="chatInput" placeholder="Ask anything…" autocomplete="off">
+            <button id="chatSend" aria-label="Send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="ai-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — SparkForge</title>
+    <meta name="description" content="Get in touch with SparkForge. We build e-commerce stores, agency websites, business portals, and AI integrations. Let's talk.">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ══ NAVBAR ══════════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+            <div class="logo-mark">SF</div>
+            <span class="logo-name">SparkForge</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="../index.html#services">Services</a></li>
+            <li><a href="../index.html#work">Our Work</a></li>
+            <li><a href="../index.html#team">Team</a></li>
+            <li><a href="#" class="nav-link--active">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="#contact-form" class="nav-cta">Start a Project</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#work">Our Work</a>
+        <a href="../index.html#team">Team</a>
+        <a href="#">Contact</a>
+        <a href="#contact-form" class="mobile-cta">Start a Project →</a>
+    </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════════════════ -->
+<section class="contact-hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+
+    <div class="container">
+        <div class="contact-hero__inner">
+            <div class="contact-hero__text">
+                <div class="hero-badge">
+                    <span class="hero-badge__dot"></span>
+                    Usually reply within 24 hours
+                </div>
+                <h1 class="contact-hero__title">
+                    Let's build<br>
+                    <em>something</em><br>
+                    <span class="title-accent">together.</span>
+                </h1>
+                <p class="contact-hero__desc">
+                    Got a project in mind? We'd love to hear about it. Drop us a message and we'll get back to you with a plan — not a pitch deck.
+                </p>
+                <div class="contact-channels">
+                    <a href="mailto:sparkforge2025@gmail.com" class="channel-card" data-reveal>
+                        <div class="channel-card__icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <span class="channel-card__label">Email</span>
+                            <span class="channel-card__val">sparkforge2025@gmail.com</span>
+                        </div>
+                        <i class="fas fa-arrow-up-right channel-card__arrow"></i>
+                    </a>
+                    <a href="tel:+917835924050" class="channel-card" data-reveal>
+                        <div class="channel-card__icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <span class="channel-card__label">Phone</span>
+                            <span class="channel-card__val">+91 78359 24050</span>
+                        </div>
+                        <i class="fas fa-arrow-up-right channel-card__arrow"></i>
+                    </a>
+                    <div class="channel-card" data-reveal>
+                        <div class="channel-card__icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <span class="channel-card__label">Based in</span>
+                            <span class="channel-card__val">New Delhi, India</span>
+                        </div>
+                    </div>
+                    <a href="https://www.instagram.com/sparkforge2025" target="_blank" rel="noopener" class="channel-card" data-reveal>
+                        <div class="channel-card__icon"><i class="fab fa-instagram"></i></div>
+                        <div>
+                            <span class="channel-card__label">Instagram</span>
+                            <span class="channel-card__val">@sparkforge2025</span>
+                        </div>
+                        <i class="fas fa-arrow-up-right channel-card__arrow"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ── FORM ──────────────────────────────────────────────── -->
+            <div class="contact-form-wrap" id="contact-form" data-reveal>
+                <div class="form-header">
+                    <p class="section-label">Send a Message</p>
+                    <h3 class="form-header__title">Tell us about your project</h3>
+                </div>
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="fname">Your Name</label>
+                            <input type="text" id="fname" name="name" placeholder="e.g. Priya Sharma" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" name="email" placeholder="you@company.com" required>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="fphone">Phone Number <span class="form-field__opt">(optional)</span></label>
+                        <input type="tel" id="fphone" name="phone" placeholder="+91 98765 43210">
+                    </div>
+                    <div class="form-field">
+                        <label for="ftype">What are you building?</label>
+                        <select id="ftype" name="project_type" required>
+                            <option value="">Select project type</option>
+                            <option value="ecommerce">E-Commerce Store</option>
+                            <option value="agency">Agency Website</option>
+                            <option value="portal">Business Portal / Dashboard</option>
+                            <option value="brand">Brand &amp; Design</option>
+                            <option value="ai">AI / ML Feature</option>
+                            <option value="other">Something else</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="fbudget">Estimated Budget</label>
+                        <select id="fbudget" name="budget">
+                            <option value="">Select a range</option>
+                            <option value="under20k">Under ₹20,000</option>
+                            <option value="20-50k">₹20,000 – ₹50,000</option>
+                            <option value="50-1L">₹50,000 – ₹1 Lakh</option>
+                            <option value="1-3L">₹1 Lakh – ₹3 Lakh</option>
+                            <option value="3L+">₹3 Lakh+</option>
+                            <option value="unsure">Not sure yet</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="fmsg">Tell us more</label>
+                        <textarea id="fmsg" name="message" rows="4" placeholder="What does it do? Who's it for? When do you need it by?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full" id="formSubmitBtn">
+                        <span class="btn__text">Send Message</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        Message sent! We'll reply within 24 hours.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ TICKER ══════════════════════════════════════════════════════════════ -->
+<div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+        <span>E-Commerce Platforms</span><span class="ticker__dot">◆</span>
+        <span>Agency Websites</span><span class="ticker__dot">◆</span>
+        <span>Business Portals</span><span class="ticker__dot">◆</span>
+        <span>SaaS Dashboards</span><span class="ticker__dot">◆</span>
+        <span>Brand &amp; Design</span><span class="ticker__dot">◆</span>
+        <span>AI Integration</span><span class="ticker__dot">◆</span>
+        <span>E-Commerce Platforms</span><span class="ticker__dot">◆</span>
+        <span>Agency Websites</span><span class="ticker__dot">◆</span>
+        <span>Business Portals</span><span class="ticker__dot">◆</span>
+        <span>SaaS Dashboards</span><span class="ticker__dot">◆</span>
+        <span>Brand &amp; Design</span><span class="ticker__dot">◆</span>
+        <span>AI Integration</span><span class="ticker__dot">◆</span>
+    </div>
+</div>
+
+<!-- ══ FAQ ══════════════════════════════════════════════════════════════════ -->
+<section class="faq">
+    <div class="container">
+        <div class="faq-inner">
+            <div class="faq-left">
+                <p class="section-label">FAQs</p>
+                <h2 class="section-title">Common<br>questions.</h2>
+                <p class="section-sub">Can't find your answer? Just email us — we're fast.</p>
+                <a href="mailto:sparkforge2025@gmail.com" class="btn btn--primary">
+                    Ask Directly <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="faq-list" id="faqList">
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-item__q" aria-expanded="false">
+                        <span>How long does a typical project take?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__a">
+                        <p>It depends on scope. A simple agency website can be done in 1–2 weeks. A full e-commerce store usually takes 3–5 weeks. Complex portals or AI features may take 4–8 weeks. We'll give you a realistic timeline in our first call.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-item__q" aria-expanded="false">
+                        <span>What's your pricing model?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__a">
+                        <p>We price per project, not per hour. After a discovery call, we'll send you a fixed-price quote. No surprise invoices. Rough ranges: ₹20k–₹80k for agency sites, ₹40k–₹2L for e-commerce, ₹60k–₹3L+ for portals and AI features.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-item__q" aria-expanded="false">
+                        <span>Do you work with international clients?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__a">
+                        <p>Absolutely. We're based in Delhi but we've worked with clients across India, the US, UK, and Southeast Asia. All communication is async-friendly and we're comfortable with USD, GBP, and INR billing.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-item__q" aria-expanded="false">
+                        <span>What do you need from me to get started?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__a">
+                        <p>Just fill the form above and give us a rough idea of what you're building. We'll set up a 20-minute discovery call to understand your needs, goals, and timeline. From there we handle the rest.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-item__q" aria-expanded="false">
+                        <span>Do you offer post-launch support?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__a">
+                        <p>Yes. Every project includes 30 days of free post-launch support. After that, we offer flexible monthly maintenance plans. We don't disappear after launch — we're still reachable.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-reveal>
+                    <button class="faq-item__q" aria-expanded="false">
+                        <span>Can you integrate AI into an existing website?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__a">
+                        <p>Yes — this is something we specialise in. Whether it's a chatbot, recommendation engine, content generator, or custom LLM workflow, we can add AI capabilities to your existing site or build them from scratch.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ CTA STRIP ═══════════════════════════════════════════════════════════ -->
+<section class="cta-strip">
+    <div class="container">
+        <div class="cta-strip__inner">
+            <div>
+                <h2 class="cta-strip__title">Ready to start?</h2>
+                <p class="cta-strip__desc">No retainers, no BS. Just great work, delivered fast.</p>
+            </div>
+            <div class="cta-strip__actions">
+                <a href="#contact-form" class="btn btn--primary btn--light">Start a Project</a>
+                <a href="mailto:sparkforge2025@gmail.com" class="btn btn--ghost btn--ghost-light">Email Directly →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="../index.html" class="nav-logo">
+                    <div class="logo-mark logo-mark--inv">SF</div>
+                    <span class="logo-name logo-name--inv">SparkForge</span>
+                </a>
+                <p class="footer-brand__desc">We build the web — e-commerce stores, agency platforms, business portals, and more. Based in Delhi. Shipping globally.</p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/sparkforge2025" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5>Build</h5>
+                    <a href="../index.html#services">E-Commerce</a>
+                    <a href="../index.html#services">Agency Websites</a>
+                    <a href="../index.html#services">Business Portals</a>
+                    <a href="../index.html#services">Brand &amp; Design</a>
+                    <a href="../index.html#services">AI Integration</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <a href="/About Us/about-us.html">About Us</a>
+                    <a href="/Carrer/sparkforge_careers.html">Careers</a>
+                    <a href="#">Contact</a>
+                    <a href="/Privacy Policy/privacy_policy_html.html">Privacy Policy</a>
+                    <a href="/Terms&Condition/sparkforge_terms_html.html">Terms of Service</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Reach Us</h5>
+                    <a href="mailto:sparkforge2025@gmail.com">sparkforge2025@gmail.com</a>
+                    <a href="tel:+917835924050">+91 78359 24050</a>
+                    <span>New Delhi, India</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 SparkForge. All rights reserved.</p>
+            <p>Built by SparkForge — with actual code.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ══ CHATBOT ════════════════════════════════════════════════════════════════ -->
+<div class="chatbot" id="chatbot">
+    <button class="chatbot__toggle" id="chatToggle" aria-label="Open chat">
+        <i class="fas fa-comment-dots" id="chatOpenIcon"></i>
+        <i class="fas fa-times" id="chatCloseIcon"></i>
+    </button>
+    <div class="chatbot__box" id="chatBox">
+        <div class="chatbot__header">
+            <div class="chatbot__avatar">SF</div>
+            <div>
+                <strong>SparkForge</strong>
+                <span>We reply fast ⚡</span>
+            </div>
+        </div>
+        <div class="chatbot__messages" id="chatMessages"></div>
+        <div class="chatbot__quick" id="chatQuick">
+            <button data-msg="What do you build?">What do you build?</button>
+            <button data-msg="How much does it cost?">Pricing</button>
+            <button data-msg="Tell me about the team">The team</button>
+            <button data-msg="How do I get started?">Get started</button>
+        </div>
+        <div class="chatbot__input">
+            <input type="text" id="chatInput" placeholder="Ask us anything…">
+            <button id="chatSend" aria-label="Send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="contact.js"></script>
+</body>
+</html>
