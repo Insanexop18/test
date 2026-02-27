@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "Pricing depends on scope:\n\n🛒 E-Commerce: ₹40k–₹2L+\n🏢 Agency Site: ₹20k–₹80k\n📊 Portal/Dashboard: ₹60k–₹3L+\n🤖 AI Feature: ₹40k–₹2L+\n\nWant a quote? Fill the form above!"
         ],
         team: [
-            "We're a team of 4:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nEveryone ships. No account managers here."
+            "Our core team:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nEveryone ships. No account managers here."
         ],
         start: [
             "Getting started is easy:\n\n1. Fill the form on this page\n2. We reply within 24 hours\n3. Discovery call to understand your needs\n4. Design → Build → Launch\n\nOr email us at sparkforge2025@gmail.com!"

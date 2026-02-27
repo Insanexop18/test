@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "Yes — all UI work is done in Figma.\n\nYou get the full source file with:\n• Auto-layout components\n• Colour & text styles\n• Interactive prototypes\n• Variants & states\n\nFully editable, forever yours."
         ],
         team: [
-            "We're a team of 4:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nEveryone ships. No account managers here."
+            "Our core team:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nEveryone ships. No account managers here."
         ],
         start: [
             "Getting started is easy:\n\n1. Click 'Start a Project' above\n2. Fill out the contact form\n3. We reply within 24 hours\n4. Brand discovery → Concepts → Refine → Deliver\n\nOr email: sparkforge2025@gmail.com"

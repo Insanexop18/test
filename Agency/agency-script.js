@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "Delivery times for Agency Websites:\n\n🌱 Starter: ~2 weeks\n🚀 Growth: 3–4 weeks\n🏢 Enterprise: 4–6 weeks\n\nTimeline can vary based on content readiness and revisions."
         ],
         team: [
-            "We're a team of 4:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nEveryone ships. No account managers here."
+            "Our core team:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nEveryone ships. No account managers here."
         ],
         start: [
             "Getting started is easy:\n\n1. Click 'Start a Project' above\n2. Fill out the contact form\n3. We reply within 24 hours\n4. Discovery call → Design → Build → Launch\n\nOr email us directly: sparkforge2025@gmail.com"

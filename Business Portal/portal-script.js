@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "Security is built-in from day one:\n\n🔒 HTTPS & encrypted storage\n🔑 JWT + OAuth 2.0 / SSO\n🛡️ CSRF protection & rate limiting\n📋 Full audit logs\n✅ OWASP guidelines followed\n\nEnterprise builds support SAML for compliance."
         ],
         team: [
-            "We're a team of 4:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nEveryone ships. No account managers here."
+            "Our core team:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nEveryone ships. No account managers here."
         ],
         start: [
             "Getting started is easy:\n\n1. Click 'Start a Project' above\n2. Fill out the contact form\n3. We reply within 24 hours\n4. Requirements mapping → Design → Build → Launch\n\nOr email: sparkforge2025@gmail.com"

@@ -717,7 +717,7 @@ h1, h2, h3, h4, h5 {
 }
 .team-card__photo img {
     width: 100%; height: 100%;
-    object-fit: cover; object-position: center top;
+    object-fit: cover; object-position: center center;
 }
 .team-card__initial {
     display: none;

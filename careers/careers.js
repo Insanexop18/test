@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "📧 sparkforge2025@gmail.com\n📞 +91 78359 24050\n📍 New Delhi, India\n\nFor career questions, mention 'Careers' in your subject line!"
         ],
         team: [
-            "We're a team of 4 right now:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nYou'd be joining a lean, high-impact crew!"
+            "We're a small, high-impact team right now:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nYou'd be joining a lean, high-impact crew!"
         ],
         fallback: [
             "Great question! For specifics, reach us at sparkforge2025@gmail.com. I can answer about: open roles, hiring process, remote work, pay, or how to apply.",

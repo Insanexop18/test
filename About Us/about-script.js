@@ -124,17 +124,17 @@ document.addEventListener('DOMContentLoaded', () => {
         cost: [
             "Pricing depends on scope, here's a rough idea:\n\n🛒 E-Commerce: ₹40k–₹2L+\n🏢 Agency Site: ₹20k–₹80k\n📊 Portal/Dashboard: ₹60k–₹3L+\n🤖 AI Feature: ₹40k–₹2L+\n\nWant a quote? Email sparkforge2025@gmail.com"
         ],
-        team: [
-            "We're a team of 4:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nEveryone ships. No account managers here."
-        ],
         start: [
             "Getting started is easy:\n\n1. Fill out the contact form\n2. We reply within 24 hours\n3. Discovery call to understand your needs\n4. Design → Build → Launch\n\nEmail sparkforge2025@gmail.com!"
         ],
         contact: [
             "📧 sparkforge2025@gmail.com\n📞 +91 78359 24050\n📍 New Delhi, India\n\nWe usually reply the same day!"
         ],
+        team: [
+            "Our core team:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nEveryone ships. No account managers here."
+        ],
         about: [
-            "SparkForge was founded in 2022 by four engineers tired of agencies that overpromised and underdelivered. We've shipped 50+ sites across e-commerce, SaaS, portals, and AI-powered apps — always as a tight team of four."
+            "SparkForge was founded in 2022 by a small team of engineers tired of agencies that overpromised and underdelivered. We've shipped 50+ sites across e-commerce, SaaS, portals, and AI-powered apps — always as a tight, focused team."
         ],
         fallback: [
             "Great question! For specific details, reach us at sparkforge2025@gmail.com — or ask me about: What we build, Pricing, Our team, or Getting started.",

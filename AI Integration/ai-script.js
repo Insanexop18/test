@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "Our AI tech stack:\n\n🐍 Python + PyTorch\n🧠 OpenAI / Claude APIs\n🔗 LangChain for LLM orchestration\n📦 Pinecone / FAISS for vector search\n☁️ AWS SageMaker for deployment\n📊 MLflow for experiment tracking"
         ],
         team: [
-            "We're a team of 4:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nTwo dedicated AI/ML engineers on every project."
+            "Our core team:\n\n👨‍💼 Mann Gupta — Founder & CEO\n👨‍💻 Ramanuz Kashyap — Lead Developer\n🤖 Kushal Malviya — AI/ML Engineer\n🤖 Ashmeet Singh — AI/ML Engineer\n\nTwo dedicated AI/ML engineers on every project."
         ],
         start: [
             "Getting started:\n\n1. Click 'Start a Project' above\n2. Describe your AI use case\n3. We reply within 24 hours\n4. Feasibility audit → PoC → Production build\n\nOr email: sparkforge2025@gmail.com"
