@@ -137,8 +137,8 @@ h1, h2, h3, h4, h5 {
 }
 .nav-inner { max-width: 1160px; margin: 0 auto; padding: 0 24px; height: 70px; display: flex; align-items: center; justify-content: space-between; }
 .nav-logo { display: flex; align-items: center; gap: 10px; font-family: 'Syne', sans-serif; font-weight: 800; }
-.logo-mark { width: 36px; height: 36px; background: linear-gradient(135deg, var(--green), var(--teal)); color: #fff; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.78rem; font-weight: 800; letter-spacing: -0.5px; flex-shrink: 0; }
-.logo-mark--inv { background: rgba(255,255,255,0.18) !important; }
+.logo-img { width: 36px; height: 36px; object-fit: contain; flex-shrink: 0; }
+.logo-img--inv { opacity: 0.95; }
 .logo-name { font-size: 1.1rem; color: var(--text-head); }
 .logo-name--inv { color: #fff !important; }
 .nav-links { display: flex; align-items: center; gap: 2rem; }
